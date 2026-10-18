@@ -760,13 +760,15 @@ select {
   color: var(--text-3);
   font-size: 12px;
   margin-bottom: 6px;
+  white-space: nowrap;
 }
 .tooltip-row {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
   justify-content: space-between;
   line-height: 1.7;
+  white-space: nowrap;
 }
 .tooltip-row span:first-child {
   display: inline-flex;
