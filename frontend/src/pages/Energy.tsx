@@ -101,7 +101,7 @@ export function Energy() {
 
         <Card
           title="Consommation journalière"
-          subtitle="Empilée par catégorie du fournisseur"
+          subtitle="Chauffage et eau chaude, empilés"
           aside={
             <button
               type="button"
@@ -158,8 +158,7 @@ export function Energy() {
             ))}
           </div>
           <p className="note">
-            Atlantic fournit environ 32 jours glissants ; le dashboard les conserve au-delà. La correspondance des
-            catégories (chauffage ou eau chaude) n'est pas encore confirmée.
+            Atlantic fournit environ 32 jours glissants ; le dashboard les conserve au-delà.
           </p>
         </Card>
       </div>

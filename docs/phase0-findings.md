@@ -78,7 +78,7 @@ Le drapeau `isSensitiveData` du catalogue couvre aussi des températures (111, 1
 ## 4. Compteurs d'énergie
 - **Cumulés** sur l'interface : 57 `HOME_ElecHeatConsumptionCumulated` = 102040, 59 `HOME_ElecDHWConsumptionCumulated` = 190432 (catalogue : unité kWh, résolution 0,001, donc probablement **des Wh**, soit 102 et 190 kWh depuis la mise en service, il y a environ 100 jours d'après les âges). 60 (total) = null.
 - **Journaliers** : `GET /magellan/setups/<id>/consumptions?periodicity=daily` → HTTP 200, **2 séries** (`category` 1 et 2, `type 1` électricité kWh), 64 périodes chacune, du **17/09 au 18/10/2026** (~32 jours glissants), découpées `mode` 1 / 2 (heures pleines / creuses, d'après cozytouch-hacs) avec coût en €. Totaux sur 32 j : cat. 1 = 71,66 kWh, cat. 2 = 86,94 kWh.
-- **Non tranché** : quelle catégorie correspond au chauffage et laquelle à l'ECS. Hypothèse : elles correspondent aux compteurs 57 et 59, ce qu'on vérifiera en comparant leurs deltas sur quelques jours.
+- **Confirmé par le propriétaire (19/10/2026)** : catégorie 1 = chauffage, catégorie 2 = eau chaude, d'après les profils de consommation observés.
 
 ## 5. Sonde catch-up (niveau C)
 **Conclusion : source exploitable pour l'énergie, aucune source pour les mesures instantanées.**
@@ -118,7 +118,6 @@ Unités, types, plages et libellés d'enum sont lus dans le catalogue, et non re
 - Nouvelle table `capability_catalogue(id, name, type, unit, resolution, enum_json)`.
 
 **Ouvert**
-- Correspondance des catégories 1 et 2 avec le chauffage et l'ECS (§4).
 - Rythme réel de mise à jour des capacités (24 h de collecte).
 - Unité de `rateLimit`.
 

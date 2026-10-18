@@ -34,8 +34,8 @@ export function cssVar(name: string): string {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || "#888";
 }
 
-/** Catégories de consommation du fournisseur (correspondance chauffage/ECS non confirmée). */
+/** Catégories de consommation du fournisseur (confirmées par le propriétaire le 19/10/2026). */
 export const ENERGY_CATEGORY: Record<number, { label: string; color: string }> = {
-  1: { label: "Catégorie 1", color: "--series-1" },
-  2: { label: "Catégorie 2", color: "--series-2" },
+  1: { label: "Chauffage", color: "--series-1" },
+  2: { label: "Eau chaude", color: "--series-2" },
 };

@@ -261,7 +261,7 @@ CREATE TABLE measurement_hourly (    -- agrégats CONSERVÉS INDÉFINIMENT
 
 CREATE TABLE energy_daily (         -- consommations journalières fournisseur
   day      TEXT NOT NULL,             -- 'YYYY-MM-DD' (date fournisseur à minuit UTC)
-  category INTEGER NOT NULL,          -- 1 / 2 (chauffage / ECS, à confirmer)
+  category INTEGER NOT NULL,          -- 1 = chauffage, 2 = ECS (confirmé)
   tariff   TEXT NOT NULL,             -- 'peak' | 'off_peak' | 'unknown' (mode fournisseur 1 / 2)
   kwh      REAL NOT NULL,
   cost     REAL,
