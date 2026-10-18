@@ -6,6 +6,7 @@ from collections.abc import Sequence
 from datetime import UTC, date, datetime
 
 from app.application.ports.history import HistoryCapabilities
+from app.application.ports.metrics import MetricInfo
 from app.domain.model import Equipment
 from app.domain.values import EnergyDay, EquipmentId, Instant, Measurement
 
@@ -83,3 +84,11 @@ class FakeStorageStats:
 
     async def size_bytes(self) -> int:
         return self.size
+
+
+class FakeMetricCatalog:
+    def __init__(self, infos: Sequence[MetricInfo] = ()) -> None:
+        self.infos = list(infos)
+
+    async def describe(self) -> list[MetricInfo]:
+        return list(self.infos)

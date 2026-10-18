@@ -40,5 +40,6 @@ def test_lifespan_builds_and_closes_without_network(tmp_path):
     with TestClient(app) as client:
         container = client.app.state.container
         assert container.semantics.equipment
+        assert client.get("/api/health").status_code == 200
     assert (tmp_path / "pac.db").exists()
     assert container.session.closed

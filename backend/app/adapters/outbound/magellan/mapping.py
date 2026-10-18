@@ -38,6 +38,7 @@ _TARIFFS = {1: Tariff.PEAK, 2: Tariff.OFF_PEAK}
 class MetricSpec:
     key: MetricKey
     capability: int
+    label: str
     unit: str | None = None
     cumulative: bool = False
 
@@ -62,7 +63,9 @@ class Semantics:
         specs = []
         for e in raw["equipment"]:
             metrics = tuple(
-                MetricSpec(MetricKey(k), int(v["capability"]), v.get("unit"), bool(v.get("cumulative", False)))
+                MetricSpec(
+                    MetricKey(k), int(v["capability"]), str(v["label"]), v.get("unit"), bool(v.get("cumulative", False))
+                )
                 for k, v in e["metrics"].items()
             )
             specs.append(

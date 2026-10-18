@@ -120,3 +120,17 @@ async def test_magellan_history_source_reads_daily_energy():
     assert hist.capabilities().energy_daily
     days = await hist.fetch_energy_days(date(2026, 10, 1), date(2026, 10, 18))
     assert days and all(date(2026, 10, 1) <= d.day <= date(2026, 10, 18) for d in days)
+
+
+async def test_magellan_describes_metrics_without_network():
+    gw, _ = make_magellan()
+    assert await gw.describe() == []  # rien lu : rien à décrire, aucun appel
+    assert gw._client.calls == []
+    await gw.read_measurements()
+    calls = list(gw._client.calls)
+    infos = {(i.equipment_id.value, i.metric_key.value): i for i in await gw.describe()}
+    assert gw._client.calls == calls
+    assert infos[("dhw", "dhw_temperature")].unit == "°C"
+    assert infos[("dhw", "dhw_status")].enum == {0: "Chauffage", 1: "ECS"}
+    assert infos[("heat_pump", "energy_dhw_cumulative")].cumulative
+    assert infos[("room_1", "room_temperature")].label == "Température ambiante"

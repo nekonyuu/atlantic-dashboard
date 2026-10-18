@@ -5,7 +5,7 @@
 # sont numérotés par deviceId croissant : `id` reçoit alors le suffixe _1, _2...
 # (sauf si `single: true`).
 #
-# Chaque métrique : `capability` (capabilityId Magellan). Type, unité et libellés
+# Chaque métrique : `label` (affiché par le front), `capability` (capabilityId Magellan). Type, unité et libellés
 # d'enum viennent du catalogue fournisseur ; `unit` ici ne sert qu'à corriger le
 # catalogue quand il est faux. `cumulative: true` = compteur cumulé (deltas).
 
@@ -16,17 +16,17 @@ equipment:
     product_id: 54          # interface CESA V2
     single: true
     metrics:
-      outdoor_temperature: {capability: 119}
-      generator_status: {capability: 91}
-      circulator_flow: {capability: 112}
+      outdoor_temperature: {label: "Température extérieure", capability: 119}
+      generator_status: {label: "Service actif", capability: 91}
+      circulator_flow: {label: "Débit circulateur", capability: 112}
       # Catalogue : kWh avec résolution 0,001 ; valeurs observées (102040 en ~100 j)
       # incompatibles avec des kWh -> Wh. À confirmer face aux consommations journalières.
-      energy_heating_cumulative: {capability: 57, unit: Wh, cumulative: true}
-      energy_dhw_cumulative: {capability: 59, unit: Wh, cumulative: true}
-      error_code: {capability: 180}
-      active_errors: {capability: 182}
-      emergency_mode: {capability: 21}
-      wifi_rssi: {capability: 179}
+      energy_heating_cumulative: {label: "Énergie chauffage (cumul)", capability: 57, unit: Wh, cumulative: true}
+      energy_dhw_cumulative: {label: "Énergie ECS (cumul)", capability: 59, unit: Wh, cumulative: true}
+      error_code: {label: "Code erreur unité extérieure", capability: 180}
+      active_errors: {label: "Erreurs actives", capability: 182}
+      emergency_mode: {label: "Mode secours", capability: 21}
+      wifi_rssi: {label: "Signal Wi-Fi", capability: 179}
 
   - id: generator
     kind: generator
@@ -34,11 +34,11 @@ equipment:
     product_id: 58
     single: true
     metrics:
-      flow_temperature: {capability: 109}
-      return_temperature: {capability: 116}
-      water_pressure: {capability: 100}
-      modulation: {capability: 50}
-      generator_errors: {capability: 6}
+      flow_temperature: {label: "Température de départ", capability: 109}
+      return_temperature: {label: "Température de retour", capability: 116}
+      water_pressure: {label: "Pression d'eau", capability: 100}
+      modulation: {label: "Modulation", capability: 50}
+      generator_errors: {label: "Code erreur générateur", capability: 6}
 
   - id: dhw
     kind: dhw
@@ -46,27 +46,27 @@ equipment:
     product_id: 47
     single: true
     metrics:
-      dhw_temperature: {capability: 111}
-      dhw_setpoint: {capability: 22}
-      dhw_status: {capability: 99}
-      dhw_on: {capability: 86}
-      dhw_boost: {capability: 165}
-      dhw_charge_setpoint: {capability: 105906}
+      dhw_temperature: {label: "Température ECS", capability: 111}
+      dhw_setpoint: {label: "Consigne ECS", capability: 22}
+      dhw_status: {label: "Production", capability: 99}
+      dhw_on: {label: "ECS activée", capability: 86}
+      dhw_boost: {label: "Boost ECS", capability: 165}
+      dhw_charge_setpoint: {label: "Charge cible (V40)", capability: 105906}
 
   - id: circuit
     kind: circuit
     label: Circuit de chauffage
     product_id: 55
     metrics:
-      flow_setpoint: {capability: 19}
+      flow_setpoint: {label: "Consigne de départ", capability: 19}
 
   - id: room
     kind: room
     label: Pièce
     product_id: 26
     metrics:
-      room_temperature: {capability: 117}
-      room_setpoint: {capability: 17}
-      thermostat_mode: {capability: 181}
-      setpoint_mode: {capability: 184}
-      heating_ongoing: {capability: 153}
+      room_temperature: {label: "Température ambiante", capability: 117}
+      room_setpoint: {label: "Consigne ambiante", capability: 17}
+      thermostat_mode: {label: "Mode thermostat", capability: 181}
+      setpoint_mode: {label: "Mode de consigne", capability: 184}
+      heating_ongoing: {label: "Chauffe en cours", capability: 153}

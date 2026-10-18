@@ -16,7 +16,7 @@ from app.adapters.outbound.magellan.mapping import (
     measurements_of,
     resolve_equipment,
 )
-from app.application.ports import Clock, HistoryCapabilities
+from app.application.ports import Clock, HistoryCapabilities, MetricInfo
 from app.domain.errors import ProviderError
 from app.domain.model import Equipment
 from app.domain.values import EnergyDay, EquipmentId, Instant, Measurement
@@ -80,6 +80,29 @@ class MagellanGateway:
     async def availability(self) -> dict[EquipmentId, bool]:
         _, _, resolved = await self._read()
         return {r.equipment.id: r.equipment.available for r in resolved if r.equipment.available is not None}
+
+    async def describe(self) -> list[MetricInfo]:
+        """Port ``MetricCatalog`` : depuis la dernière lecture et le catalogue en cache, sans appel réseau."""
+        if self._snapshot is None:
+            return []
+        catalogue = self._catalogue or Catalogue()
+        out = []
+        for r in self._snapshot[2]:
+            for metric in r.spec.metrics:
+                if metric.capability not in r.capabilities:
+                    continue
+                info = catalogue.get(metric.capability)
+                out.append(
+                    MetricInfo(
+                        equipment_id=r.equipment.id,
+                        metric_key=metric.key,
+                        label=metric.label,
+                        unit=metric.unit or (info.unit if info else None),
+                        cumulative=metric.cumulative,
+                        enum=dict(info.enum) if info else {},
+                    )
+                )
+        return out
 
     async def _read(self) -> tuple[float, Instant, list[ResolvedEquipment]]:
         now = self._monotonic()

@@ -4,13 +4,16 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import os
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 from dataclasses import dataclass
+from pathlib import Path
 
 import aiohttp
 from fastapi import FastAPI
 
+from app.adapters.inbound.http import HttpApi, mount_spa, router
 from app.adapters.inbound.scheduler import Scheduler
 from app.adapters.outbound.magellan.client import MagellanClient
 from app.adapters.outbound.magellan.gateway import MagellanGateway, MagellanHistorySource
@@ -31,7 +34,15 @@ from app.application.usecases.backup import RunBackup
 from app.application.usecases.catch_up import CatchUp
 from app.application.usecases.collect import CollectSamples
 from app.application.usecases.purge import PurgeRaw
-from app.application.usecases.queries import GetEnergy, GetEquipment, GetGaps, GetHealth, GetLatest, GetSeries
+from app.application.usecases.queries import (
+    GetEnergy,
+    GetEquipment,
+    GetGaps,
+    GetHealth,
+    GetLatest,
+    GetMetrics,
+    GetSeries,
+)
 from app.config import Settings
 from app.domain import events
 from app.domain.services import GapDetector
@@ -68,6 +79,8 @@ class Container:
     get_gaps: GetGaps
     get_energy: GetEnergy
     get_health: GetHealth
+    get_metrics: GetMetrics
+    clock: SystemClock
     scheduler: Scheduler
     semantics: Semantics
 
@@ -144,6 +157,8 @@ async def build(settings: Settings) -> Container:
         ),
         get_gaps=GetGaps(gaps, poll_log, clock, gap_detector),
         get_energy=GetEnergy(energy),
+        get_metrics=GetMetrics(gateway),
+        clock=clock,
         get_health=GetHealth(
             poll_log=poll_log,
             gaps=gaps,
@@ -169,6 +184,17 @@ def create_app(settings: Settings | None = None, *, start_scheduler: bool = True
         configure_logging(resolved.log_level)
         container = await build(resolved)
         app.state.container = container
+        app.state.api = HttpApi(
+            get_health=container.get_health,
+            get_equipment=container.get_equipment,
+            get_latest=container.get_latest,
+            get_series=container.get_series,
+            get_gaps=container.get_gaps,
+            get_energy=container.get_energy,
+            get_metrics=container.get_metrics,
+            scheduler_state=lambda: container.scheduler.state,
+            clock=container.clock,
+        )
         if start_scheduler:
             container.scheduler.start()
         log.info("Démarrage : poll toutes les %d s", resolved.poll_interval)
@@ -178,7 +204,11 @@ def create_app(settings: Settings | None = None, *, start_scheduler: bool = True
             await container.close()
             log.info("Arrêt propre")
 
-    return FastAPI(title="PAC dashboard", lifespan=lifespan)
+    app = FastAPI(title="PAC dashboard", lifespan=lifespan)
+    app.include_router(router)
+    static_dir = settings.static_dir if settings else Path(os.environ.get("STATIC_DIR", "/app/static"))
+    mount_spa(app, static_dir)
+    return app
 
 
 app = create_app()

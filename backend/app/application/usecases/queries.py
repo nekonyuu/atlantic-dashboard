@@ -13,6 +13,8 @@ from app.application.ports import (
     EquipmentRepository,
     GapRepository,
     MeasurementRepository,
+    MetricCatalog,
+    MetricInfo,
     PollLogRepository,
     StorageStats,
 )
@@ -35,6 +37,14 @@ from app.domain.values import (
 class LatestValue:
     measurement: Measurement
     age_seconds: int
+
+
+class GetMetrics:
+    def __init__(self, catalog: MetricCatalog) -> None:
+        self._catalog = catalog
+
+    async def run(self) -> list[MetricInfo]:
+        return sorted(await self._catalog.describe(), key=lambda i: (i.equipment_id, i.metric_key))
 
 
 class GetEquipment:

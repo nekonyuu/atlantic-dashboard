@@ -1,5 +1,6 @@
 from app.application.ports.gateway import EquipmentGateway
 from app.application.ports.history import HistoryCapabilities, HistorySource
+from app.application.ports.metrics import MetricCatalog, MetricInfo
 from app.application.ports.repositories import (
     EnergyRepository,
     EquipmentRepository,
@@ -19,6 +20,8 @@ __all__ = [
     "HistoryCapabilities",
     "HistorySource",
     "MeasurementRepository",
+    "MetricCatalog",
+    "MetricInfo",
     "PollLogRepository",
     "StorageStats",
 ]

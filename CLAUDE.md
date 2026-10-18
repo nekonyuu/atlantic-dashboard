@@ -15,7 +15,7 @@ Dashboard perso pour PAC Atlantic Alfea Excellia S + ballon ECS (thermostat Navi
 - **Avant tout commit : lint et tests doivent passer.**
 
 ## Phases
-Suivre §12 du plan. S'arrêter aux phases marquées ⏸ (0, 1, 4) et montrer le résultat. Phase en cours : **3** (API REST). Phase 2 codée ; test de 24 h sur le NAS à faire par le propriétaire.
+Suivre §12 du plan. S'arrêter aux phases marquées ⏸ (0, 1, 4) et montrer le résultat. Phase en cours : **4** (frontend, ⏸). Phases 2-3 codées ; test de 24 h sur le NAS à faire par le propriétaire.
 
 ## Architecture (hexagonale + DDD, §3)
 - `app/domain/` : pur, stdlib uniquement, pas d'I/O, horloge injectée.
