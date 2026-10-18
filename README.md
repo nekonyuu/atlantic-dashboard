@@ -30,8 +30,12 @@ L'image est publiée par GitHub Actions sur `ghcr.io/nekonyuu/atlantic-dashboard
 1. **Dossier de données** sur un disque **local** du NAS (jamais un montage SMB/NFS : SQLite en WAL y est
    peu fiable), par exemple `/volume1/docker/pac-dashboard`. Le conteneur doit pouvoir écrire dans le
    **dossier** (création de `pac.db-wal` et `pac.db-shm`), pas seulement dans le fichier.
-   Repérez l'UID:GID du propriétaire du dossier (`ls -ln /volume1/docker`) et reportez-le dans
-   `docker-compose.yml` (`user: "1000:10"` par défaut).
+   **Créez-le avant le premier démarrage** : sinon Docker le crée en `root` et l'application ne peut pas
+   y écrire. Puis alignez propriétaire et utilisateur du conteneur :
+   ```sh
+   sudo mkdir -p /volume1/docker/pac-dashboard
+   sudo chown -R 1000:10 /volume1/docker/pac-dashboard   # ou votre UID:GID (`id`) reporté dans `user:`
+   ```
 2. **Fichiers** : copiez `docker-compose.yml` et `.env.example` dans un dossier du NAS, renommez
    `.env.example` en `.env`, renseignez vos identifiants Cozytouch, puis `chmod 600 .env`.
 3. **Accès à l'image** : les paquets GHCR sont **privés** par défaut. Soit vous rendez le paquet public
@@ -193,6 +197,6 @@ Construction locale : `docker build -t pac-dashboard .`
 |---|---|
 | Bandeau « Collecte arrêtée : identifiants refusés » | corriger `.env`, puis `docker compose up -d` |
 | Bandeau « Cloud Atlantic indisponible » | panne ou limitation côté Atlantic ; reprise automatique (backoff jusqu'à 1 h) |
-| `unable to open database file` | droits du dossier `/data` : ajuster `user:` dans le compose |
+| « Stockage inaccessible : /data n'est pas accessible en écriture » | `sudo chown -R 1000:10 /volume1/docker/pac-dashboard` (ou l'UID:GID de `user:`), puis `docker compose up -d` |
 | `denied` au `docker compose pull` | paquet GHCR privé : le rendre public ou `docker login ghcr.io` |
 | Page Énergie absente | Atlantic ne déclare pas encore de consommation pour l'installation |

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 import sqlite3
 from datetime import datetime
 
@@ -168,3 +169,19 @@ async def test_storage_stats(db, tmp_path):
     await repo.append([m(10, 1.0)])
     assert await SqliteStorageStats(tmp_path / "data" / "pac.db").size_bytes() > 0
     assert await SqliteStorageStats(tmp_path / "absent.db").size_bytes() == 0
+
+
+@pytest.mark.skipif(os.name != "posix" or os.geteuid() == 0, reason="droits POSIX, pas root")
+async def test_unwritable_directory_gives_actionable_error(tmp_path):
+    from app.adapters.outbound.sqlite import StorageNotWritable
+
+    data = tmp_path / "data"
+    data.mkdir()
+    data.chmod(0o555)
+    try:
+        with pytest.raises(StorageNotWritable) as exc:
+            await Database.open(data / "pac.db")
+        message = str(exc.value)
+        assert "uid=" in message and "chown" in message and "user:" in message
+    finally:
+        data.chmod(0o755)

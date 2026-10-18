@@ -1,6 +1,6 @@
 """Adaptateur de persistance SQLite (aiosqlite)."""
 
-from app.adapters.outbound.sqlite.connection import Database, migrate
+from app.adapters.outbound.sqlite.connection import Database, StorageNotWritable, migrate
 from app.adapters.outbound.sqlite.repositories import (
     SqliteCatalogueStore,
     SqliteEnergyRepository,
@@ -21,5 +21,6 @@ __all__ = [
     "SqliteMeasurementRepository",
     "SqlitePollLogRepository",
     "SqliteStorageStats",
+    "StorageNotWritable",
     "migrate",
 ]

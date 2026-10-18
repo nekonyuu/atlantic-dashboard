@@ -28,6 +28,7 @@ from app.adapters.outbound.sqlite import (
     SqliteMeasurementRepository,
     SqlitePollLogRepository,
     SqliteStorageStats,
+    StorageNotWritable,
 )
 from app.adapters.outbound.system import SystemClock
 from app.application.usecases.backup import RunBackup
@@ -43,7 +44,7 @@ from app.application.usecases.queries import (
     GetMetrics,
     GetSeries,
 )
-from app.config import Settings
+from app.config import ConfigError, Settings
 from app.domain import events
 from app.domain.services import GapDetector
 
@@ -180,9 +181,18 @@ def configure_logging(level: str) -> None:
 def create_app(settings: Settings | None = None, *, start_scheduler: bool = True) -> FastAPI:
     @asynccontextmanager
     async def lifespan(app: FastAPI) -> AsyncIterator[None]:
-        resolved = settings or Settings.from_env()
+        try:
+            resolved = settings or Settings.from_env()
+        except ConfigError as exc:
+            configure_logging("INFO")
+            log.error("Configuration invalide : %s", exc)
+            raise
         configure_logging(resolved.log_level)
-        container = await build(resolved)
+        try:
+            container = await build(resolved)
+        except StorageNotWritable as exc:
+            log.error("Stockage inaccessible : %s", exc)
+            raise
         app.state.container = container
         app.state.api = HttpApi(
             get_health=container.get_health,

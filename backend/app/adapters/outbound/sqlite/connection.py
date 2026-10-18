@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+import os
 import re
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
@@ -47,6 +48,27 @@ async def migrate(conn: aiosqlite.Connection) -> None:
             raise
 
 
+class StorageNotWritable(RuntimeError):
+    """Dossier de la base inaccessible en écriture (droits du volume, UID/GID du conteneur)."""
+
+
+def _check_writable(path: Path) -> None:
+    """SQLite en WAL doit pouvoir créer ``-wal`` et ``-shm`` : le dossier entier doit être inscriptible."""
+    who = f"uid={os.getuid()} gid={os.getgid()}" if hasattr(os, "getuid") else "processus courant"
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+    except OSError as exc:
+        raise StorageNotWritable(f"Impossible de créer {path.parent} ({who}) : {exc.strerror}") from None
+    targets = [path.parent] + [p for p in (path, Path(f"{path}-wal"), Path(f"{path}-shm")) if p.exists()]
+    for target in targets:
+        if not os.access(target, os.W_OK):
+            raise StorageNotWritable(
+                f"{target} n'est pas accessible en écriture pour {who}. Donnez le dossier à cet utilisateur "
+                f"(chown -R {os.getuid() if hasattr(os, 'getuid') else 'UID'}:"
+                f"{os.getgid() if hasattr(os, 'getgid') else 'GID'} <dossier>) ou ajustez `user:` dans le compose."
+            )
+
+
 class Database:
     """Une connexion d'écriture (sérialisée par un verrou) et une connexion de lecture distincte."""
 
@@ -58,7 +80,7 @@ class Database:
     @classmethod
     async def open(cls, path: str | Path) -> Database:
         path = Path(path)
-        path.parent.mkdir(parents=True, exist_ok=True)
+        _check_writable(path)
         is_new = not path.exists()
         writer = await _connect(path)
         try:
