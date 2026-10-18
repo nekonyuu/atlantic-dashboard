@@ -50,6 +50,10 @@ class FakeContainer:
         self.collect = SimpleNamespace(run=self._collect)
         self.get_equipment = SimpleNamespace(run=self._equipment)
         self.get_latest = SimpleNamespace(run=self._latest)
+        self.backup = SimpleNamespace(run=self._backup)
+
+    async def _backup(self):
+        return "pac-2026-10-18.db"
 
     async def _catch_up(self, since=None):
         if self.error:
@@ -111,3 +115,11 @@ async def test_provider_errors_exit_codes(monkeypatch, capsys, error, code):
     assert await cli.main(["catch-up"]) == code
     assert c.closed
     assert capsys.readouterr().err
+
+
+async def test_backup_prints_file_and_never_collects(monkeypatch, capsys):
+    container = FakeContainer()
+    _patch(monkeypatch, container)
+    assert await cli.main(["backup"]) == 0
+    assert "pac-2026-10-18.db" in capsys.readouterr().out
+    assert container.collected == 0 and container.closed

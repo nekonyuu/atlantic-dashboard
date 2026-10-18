@@ -13,3 +13,4 @@ frontend/dist/
 *.db-shm
 .DS_Store
 backend/discover_magellan_output.json
+backend/backup/

@@ -11,12 +11,13 @@ Dashboard perso pour PAC Atlantic Alfea Excellia S + ballon ECS (thermostat Navi
 ## Commandes
 - Découverte phase 0 : `cd backend && set -a && source ../.env && set +a && uv run python scripts/discover_magellan.py` (jamais d'identifiants en ligne de commande)
 - Lint : `cd backend && uv run ruff check . && uv run ruff format --check .`
-- CLI : `uv run python -m app.adapters.inbound.cli discover` (1 cycle réel) / `catch-up [--since AAAA-MM-JJ]`
+- CLI : `uv run python -m app.adapters.inbound.cli discover` (1 cycle réel) / `catch-up [--since AAAA-MM-JJ]` / `backup`
+- Image : `docker build -t pac-dashboard .` ; publiée par `.github/workflows/ci.yml` sur `ghcr.io/nekonyuu/atlantic-dashboard` (main + tags v*).
 - Tests : `cd backend && uv run pytest` (inclut les contrats import-linter, aussi via `uv run lint-imports`)
 - **Avant tout commit : lint et tests doivent passer.**
 
 ## Phases
-Suivre §12 du plan. S'arrêter aux phases marquées ⏸ (0, 1, 4) et montrer le résultat. Phase en cours : **4 terminée, en attente de validation** (⏸). Suivante : 5 (conteneurisation finale). Test de 24 h sur le NAS à faire par le propriétaire.
+Suivre §12 du plan. S'arrêter aux phases marquées ⏸ (0, 1, 4) et montrer le résultat. Phases 0 à 5 terminées. Reste côté propriétaire : test de 24 h et persistance sur le NAS. Phase 6 (commandes) optionnelle.
 
 ## Architecture (hexagonale + DDD, §3)
 - `app/domain/` : pur, stdlib uniquement, pas d'I/O, horloge injectée.

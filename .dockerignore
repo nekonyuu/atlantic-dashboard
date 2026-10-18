@@ -1,8 +1,14 @@
 .git
+.github
 **/.venv
 **/__pycache__
+**/.pytest_cache
+**/.ruff_cache
 backend/discover_*output.json
+backend/tests
+backend/scripts
 .env
 frontend/node_modules
+frontend/dist
 docs
 *.db*

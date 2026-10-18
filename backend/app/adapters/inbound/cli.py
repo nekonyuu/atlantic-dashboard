@@ -1,4 +1,4 @@
-"""CLI d'exploitation : ``python -m app.adapters.inbound.cli {catch-up,discover}``."""
+"""CLI d'exploitation : ``python -m app.adapters.inbound.cli {catch-up,discover,backup}``."""
 
 from __future__ import annotations
 
@@ -30,6 +30,7 @@ def build_parser() -> argparse.ArgumentParser:
     catch = sub.add_parser("catch-up", help="rattrape l'historique fournisseur")
     catch.add_argument("--since", type=_iso_date, default=None, metavar="YYYY-MM-DD")
     sub.add_parser("discover", help="lance un cycle de collecte et affiche l'installation")
+    sub.add_parser("backup", help="sauvegarde immédiate de la base (VACUUM INTO, sans appel fournisseur)")
     return parser
 
 
@@ -66,6 +67,8 @@ async def main(argv: list[str] | None = None) -> int:
     try:
         if args.command == "catch-up":
             print(await container.catch_up.run(args.since))
+        elif args.command == "backup":
+            print(f"Sauvegarde : {settings.backup_dir / await container.backup.run()}")
         else:
             await _discover(container)
     except CredentialsRejected as exc:
