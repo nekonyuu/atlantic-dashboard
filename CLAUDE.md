@@ -10,11 +10,12 @@ Dashboard perso pour PAC Atlantic Alfea Excellia S + ballon ECS (thermostat Navi
 ## Commandes
 - Découverte phase 0 : `cd backend && set -a && source ../.env && set +a && uv run python scripts/discover_magellan.py` (jamais d'identifiants en ligne de commande)
 - Lint : `cd backend && uv run ruff check . && uv run ruff format --check .`
+- CLI : `uv run python -m app.adapters.inbound.cli discover` (1 cycle réel) / `catch-up [--since AAAA-MM-JJ]`
 - Tests : `cd backend && uv run pytest` (inclut les contrats import-linter, aussi via `uv run lint-imports`)
 - **Avant tout commit : lint et tests doivent passer.**
 
 ## Phases
-Suivre §12 du plan. S'arrêter aux phases marquées ⏸ (0, 1, 4) et montrer le résultat. Phase en cours : **1 terminée, en attente de validation** (⏸). Suivante : 2 (adaptateurs SQLite + Magellan, scheduler, Dockerfile minimal).
+Suivre §12 du plan. S'arrêter aux phases marquées ⏸ (0, 1, 4) et montrer le résultat. Phase en cours : **3** (API REST). Phase 2 codée ; test de 24 h sur le NAS à faire par le propriétaire.
 
 ## Architecture (hexagonale + DDD, §3)
 - `app/domain/` : pur, stdlib uniquement, pas d'I/O, horloge injectée.

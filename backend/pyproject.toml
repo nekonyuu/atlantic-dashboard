@@ -4,11 +4,16 @@ version = "0.1.0"
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "aiohttp>=3.9",
+    "aiosqlite>=0.22.1",
+    "fastapi>=0.146.0",
+    "pyyaml>=6.0.3",
     "tzdata>=2026.5",
+    "uvicorn>=0.30",
 ]
 
 [dependency-groups]
 dev = [
+    "httpx2>=2.14.0",
     "import-linter>=2.15",
     "pytest>=9.1.1",
     "pytest-asyncio>=1.4.0",
@@ -57,12 +62,16 @@ name = "Seul adapters.outbound.magellan parle HTTP au fournisseur"
 type = "forbidden"
 source_modules = ["app.domain", "app.application", "app.adapters.inbound", "app.adapters.outbound.sqlite", "app.adapters.outbound.fake"]
 forbidden_modules = ["aiohttp"]
+# La CLI passe par la racine de composition (app.main), seul point d'assemblage autorisé.
+ignore_imports = ["app.adapters.inbound.cli -> app.main"]
 
 [[tool.importlinter.contracts]]
 name = "Seul adapters.outbound.sqlite touche SQLite"
 type = "forbidden"
 source_modules = ["app.domain", "app.application", "app.adapters.inbound", "app.adapters.outbound.magellan", "app.adapters.outbound.fake"]
 forbidden_modules = ["aiosqlite", "sqlite3"]
+# La CLI passe par la racine de composition (app.main), seul point d'assemblage autorisé.
+ignore_imports = ["app.adapters.inbound.cli -> app.main"]
 
 [[tool.importlinter.contracts]]
 name = "Seul adapters.inbound.http importe FastAPI"

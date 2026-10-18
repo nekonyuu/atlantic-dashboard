@@ -1,0 +1,17 @@
+services:
+  pac-dashboard:
+    build: .                        # ou image: registre/pac-dashboard:tag
+    container_name: pac-dashboard
+    restart: unless-stopped
+    user: "1000:10"                 # UID:GID du propriétaire du dossier sur le NAS
+    env_file: .env
+    environment:
+      TZ: Europe/Paris
+    ports:
+      - "8080:8000"
+    volumes:
+      - /volume1/docker/pac-dashboard:/data   # disque LOCAL du NAS, pas un montage réseau
+    stop_grace_period: 30s          # une requête Magellan peut prendre jusqu'à 30 s (timeout)
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }

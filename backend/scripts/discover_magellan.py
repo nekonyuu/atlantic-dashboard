@@ -59,12 +59,35 @@ def sensitive_capabilities(out: dict[str, Any]) -> frozenset[int]:
     )
 
 
+# Identifiants numériques remplacés par des pseudonymes stables (cohérence conservée).
+_PSEUDO_KEYS = {"deviceId", "gatewayId", "zoneId", "masterDeviceId", "setupId"}
+
+
+def pseudonymize(node: Any, table: dict[tuple[str, Any], int] | None = None) -> Any:
+    table = {} if table is None else table
+    if isinstance(node, dict):
+        out = {}
+        for k, v in node.items():
+            if k in _PSEUDO_KEYS and isinstance(v, int):
+                out[k] = table.setdefault(("id", v), 1000 + len(table))
+            else:
+                out[k] = pseudonymize(v, table)
+        return out
+    if isinstance(node, list):
+        return [pseudonymize(i, table) for i in node]
+    return node
+
+
 def write_fixture(out: dict[str, Any]) -> None:
-    fixture = {k: v for k, v in out.items() if k != "capability_catalogue"}
+    fixture = {k: v for k, v in out.items() if k not in ("capability_catalogue", "capabilities")}
+    # Catalogue (métadonnées produit, non personnelles) réduit aux capacités présentes.
+    body = (out.get("setupview_1") or {}).get("body") or []
+    present = {c["capabilityId"] for s in body for d in s.get("devices", []) for c in d.get("capabilities", [])}
+    catalogue = (out.get("capability_catalogue") or [None, []])[1] or []
     FIXTURE_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    FIXTURE_OUTPUT.write_text(
-        json.dumps(anonymize(fixture, sensitive_capabilities(out)), indent=2, ensure_ascii=False)
-    )
+    data = pseudonymize(anonymize(fixture, sensitive_capabilities(out)))
+    data["capability_catalogue"] = [c for c in catalogue if c.get("id") in present]
+    FIXTURE_OUTPUT.write_text(json.dumps(data, indent=2, ensure_ascii=False))
 
 
 class RateLimited(Exception):

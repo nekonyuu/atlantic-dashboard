@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from collections.abc import Mapping
 from dataclasses import dataclass, field
 from enum import StrEnum
 
@@ -10,7 +11,11 @@ from app.domain.values import EquipmentId, Instant
 
 @dataclass(slots=True)
 class Equipment:
-    """Un appareil de l'installation ; porte sa dernière disponibilité connue."""
+    """Un appareil de l'installation ; porte sa dernière disponibilité connue.
+
+    ``provider_ref`` : identifiants fournisseur opaques (stockés, jamais loggés
+    ni exposés par l'API) ; le domaine ne les interprète pas.
+    """
 
     id: EquipmentId
     label: str
@@ -18,6 +23,7 @@ class Equipment:
     available: bool | None = None
     first_seen: Instant | None = None
     last_seen: Instant | None = None
+    provider_ref: Mapping[str, int | str | None] = field(default_factory=dict, repr=False)
 
     def seen(self, at: Instant, available: bool | None) -> None:
         if self.first_seen is None:
@@ -40,6 +46,7 @@ class Installation:
             self.equipment[observed.id] = current
         current.label = observed.label
         current.kind = observed.kind
+        current.provider_ref = dict(observed.provider_ref)
         current.seen(at, observed.available)
         return current
 

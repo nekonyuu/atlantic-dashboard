@@ -225,7 +225,8 @@ PRAGMA auto_vacuum=INCREMENTAL;  -- à la création de la base
 
 CREATE TABLE equipment (
   equipment_id   TEXT PRIMARY KEY,    -- EquipmentId du domaine (ex. 'dhw_0')
-  device_id      INTEGER NOT NULL,    -- deviceId Magellan, jamais loggé
+  kind           TEXT NOT NULL,       -- dhw | heat_pump | generator | circuit | room
+  device_id      INTEGER,             -- deviceId Magellan, jamais loggé
   model_id       INTEGER,
   product_id     INTEGER,
   slot           TEXT,                -- DHW_0, ROOM_0, TESC_0, GENERATOR_0, CESA
@@ -261,7 +262,7 @@ CREATE TABLE measurement_hourly (    -- agrégats CONSERVÉS INDÉFINIMENT
 CREATE TABLE energy_daily (         -- consommations journalières fournisseur
   day      TEXT NOT NULL,             -- 'YYYY-MM-DD' (date fournisseur à minuit UTC)
   category INTEGER NOT NULL,          -- 1 / 2 (chauffage / ECS, à confirmer)
-  tariff   INTEGER NOT NULL,          -- mode fournisseur : 1 = HP, 2 = HC
+  tariff   TEXT NOT NULL,             -- 'peak' | 'off_peak' | 'unknown' (mode fournisseur 1 / 2)
   kwh      REAL NOT NULL,
   cost     REAL,
   origin   TEXT NOT NULL DEFAULT 'backfill',

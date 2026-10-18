@@ -18,7 +18,11 @@ class InMemoryEquipmentRepository:
 
     async def upsert(self, equipment: Sequence[Equipment]) -> None:
         for item in equipment:
-            self._items[item.id] = replace(item)
+            stored = replace(item)
+            known = self._items.get(item.id)
+            if known is not None and known.first_seen is not None:
+                stored.first_seen = known.first_seen  # le premier instant vu est conservé
+            self._items[item.id] = stored
 
     async def all(self) -> list[Equipment]:
         return [replace(e) for e in self._items.values()]
