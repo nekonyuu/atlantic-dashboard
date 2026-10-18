@@ -1,0 +1,4246 @@
+{
+  "generated_at": 1792353710,
+  "token_expires_in": 28800,
+  "setupview_1": {
+    "status": 200,
+    "at": 1792353713,
+    "body": [
+      {
+        "id": "MASKED",
+        "name": "MASKED",
+        "address": "MASKED",
+        "numberOfRooms": 6,
+        "numberOfPersons": 0,
+        "area": 107,
+        "type": 2,
+        "mainHeatingEnergy": 1,
+        "mainDHWEnergy": 1,
+        "setupBuildingDate": 3,
+        "rateLimit": 30,
+        "currency": "EUR",
+        "absence": {
+          "endDate": null,
+          "startDate": null
+        },
+        "devices": [
+          {
+            "customName": "CESA V2 DEFAULT",
+            "deviceId": 27797320,
+            "deviceUrl": "MASKED",
+            "gatewayId": 1139778,
+            "masterDeviceId": null,
+            "modelId": 1693,
+            "name": "MASKED",
+            "productId": 54,
+            "tags": [],
+            "gatewaySerialNumber": "MASKED",
+            "longName": "MASKED",
+            "productRange": null,
+            "isAvailable": true,
+            "isAvailableTimestamp": 1791737370,
+            "isRemoteMaintainable": true,
+            "zoneId": 996188,
+            "showInSettings": true,
+            "modelFamily": "Heat_Pump",
+            "capabilities": [
+              {
+                "capabilityId": 8,
+                "modificationDate": 1792350474,
+                "value": "3000"
+              },
+              {
+                "capabilityId": 9,
+                "modificationDate": 1792350474,
+                "value": "3000"
+              },
+              {
+                "capabilityId": 11,
+                "modificationDate": 1783669608,
+                "value": "1200"
+              },
+              {
+                "capabilityId": 21,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 23,
+                "modificationDate": 1787076089,
+                "value": "55.00000000000000000000"
+              },
+              {
+                "capabilityId": 39,
+                "modificationDate": 1783669606,
+                "value": "40.0000000000000000000"
+              },
+              {
+                "capabilityId": 57,
+                "modificationDate": 1792342181,
+                "value": "102040"
+              },
+              {
+                "capabilityId": 59,
+                "modificationDate": 1792327108,
+                "value": "190432"
+              },
+              {
+                "capabilityId": 60,
+                "modificationDate": 1783669605,
+                "value": null
+              },
+              {
+                "capabilityId": 88,
+                "modificationDate": 1783669605,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 91,
+                "modificationDate": 1792327003,
+                "value": "1"
+              },
+              {
+                "capabilityId": 93,
+                "modificationDate": 1783669605,
+                "value": "1"
+              },
+              {
+                "capabilityId": 94,
+                "modificationDate": 1783669605,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 106,
+                "modificationDate": 1783669608,
+                "value": "9"
+              },
+              {
+                "capabilityId": 109,
+                "modificationDate": 1792350192,
+                "value": "26.13"
+              },
+              {
+                "capabilityId": 112,
+                "modificationDate": 1792337588,
+                "value": "0"
+              },
+              {
+                "capabilityId": 119,
+                "modificationDate": 1792348463,
+                "value": "10.02"
+              },
+              {
+                "capabilityId": 120,
+                "modificationDate": 1783669606,
+                "value": "5"
+              },
+              {
+                "capabilityId": 150,
+                "modificationDate": 1792136290,
+                "value": "[[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]"
+              },
+              {
+                "capabilityId": 152,
+                "modificationDate": 1786798968,
+                "value": "0"
+              },
+              {
+                "capabilityId": 164,
+                "modificationDate": 1783669605,
+                "value": "1298"
+              },
+              {
+                "capabilityId": 171,
+                "modificationDate": 1783669605,
+                "value": "35.0000000000000000000"
+              },
+              {
+                "capabilityId": 172,
+                "modificationDate": 1783669605,
+                "value": "10.0000000000000000000"
+              },
+              {
+                "capabilityId": 179,
+                "modificationDate": 1792008776,
+                "value": "-57"
+              },
+              {
+                "capabilityId": 180,
+                "modificationDate": 1792136290,
+                "value": "100"
+              },
+              {
+                "capabilityId": 182,
+                "modificationDate": 1783669606,
+                "value": "0"
+              },
+              {
+                "capabilityId": 188,
+                "modificationDate": 1783669605,
+                "value": "3"
+              },
+              {
+                "capabilityId": 218,
+                "modificationDate": 1791737370,
+                "value": "0"
+              },
+              {
+                "capabilityId": 222,
+                "modificationDate": 1786798978,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 315,
+                "modificationDate": 1783669602,
+                "value": "7200"
+              },
+              {
+                "capabilityId": 328,
+                "modificationDate": 1792136290,
+                "value": "0"
+              },
+              {
+                "capabilityId": 329,
+                "modificationDate": 1783669603,
+                "value": "0"
+              },
+              {
+                "capabilityId": 334,
+                "modificationDate": 1792136290,
+                "value": "0"
+              },
+              {
+                "capabilityId": 335,
+                "modificationDate": 1783669605,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 342,
+                "modificationDate": 1787076089,
+                "value": "55.00000000000000000000"
+              },
+              {
+                "capabilityId": 345,
+                "modificationDate": 1792136290,
+                "value": "0"
+              },
+              {
+                "capabilityId": 346,
+                "modificationDate": 1783669603,
+                "value": "0"
+              },
+              {
+                "capabilityId": 349,
+                "modificationDate": 1783669603,
+                "value": "21"
+              },
+              {
+                "capabilityId": 351,
+                "modificationDate": 1783669603,
+                "value": "0"
+              },
+              {
+                "capabilityId": 370,
+                "modificationDate": 1790760801,
+                "value": "0"
+              },
+              {
+                "capabilityId": 380,
+                "modificationDate": 1792136290,
+                "value": "100"
+              },
+              {
+                "capabilityId": 381,
+                "modificationDate": 1783669605,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 100636,
+                "modificationDate": 1785266238,
+                "value": "0"
+              },
+              {
+                "capabilityId": 101302,
+                "modificationDate": 1783669605,
+                "value": "1"
+              },
+              {
+                "capabilityId": 107060,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 107078,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 107079,
+                "modificationDate": 1783669607,
+                "value": "2.5800000000000000000"
+              },
+              {
+                "capabilityId": 107083,
+                "modificationDate": 1783669607,
+                "value": "1"
+              },
+              {
+                "capabilityId": 107451,
+                "modificationDate": 1783669607,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 107452,
+                "modificationDate": 1783669607,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 107453,
+                "modificationDate": 1783669607,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 207451,
+                "modificationDate": 1783669607,
+                "value": "MASKED"
+              }
+            ]
+          },
+          {
+            "customName": "TESC_0 DEFAULT",
+            "deviceId": 27797321,
+            "deviceUrl": "MASKED",
+            "gatewayId": 1139778,
+            "masterDeviceId": 27797320,
+            "modelId": 1388,
+            "name": "MASKED",
+            "productId": 55,
+            "tags": [
+              {
+                "label": "MASKED",
+                "value": "ROOM_0"
+              }
+            ],
+            "gatewaySerialNumber": "MASKED",
+            "longName": "MASKED",
+            "productRange": null,
+            "isAvailable": true,
+            "isAvailableTimestamp": 1791737370,
+            "isRemoteMaintainable": false,
+            "zoneId": 996189,
+            "showInSettings": null,
+            "modelFamily": null,
+            "capabilities": [
+              {
+                "capabilityId": 19,
+                "modificationDate": 1792337683,
+                "value": "20"
+              },
+              {
+                "capabilityId": 109,
+                "modificationDate": 1792350192,
+                "value": "25.86"
+              },
+              {
+                "capabilityId": 218,
+                "modificationDate": 1791737370,
+                "value": "0"
+              },
+              {
+                "capabilityId": 106000,
+                "modificationDate": 1783669606,
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "customName": "ROOM_0",
+            "deviceId": 27797322,
+            "deviceUrl": "MASKED",
+            "gatewayId": 1139778,
+            "masterDeviceId": 27797320,
+            "modelId": 557,
+            "name": "MASKED",
+            "productId": 26,
+            "tags": [],
+            "gatewaySerialNumber": "MASKED",
+            "longName": "MASKED",
+            "productRange": null,
+            "isAvailable": true,
+            "isAvailableTimestamp": 1791737370,
+            "isRemoteMaintainable": false,
+            "zoneId": 996190,
+            "showInSettings": false,
+            "modelFamily": null,
+            "capabilities": [
+              {
+                "capabilityId": 7,
+                "modificationDate": 1783669730,
+                "value": "1"
+              },
+              {
+                "capabilityId": 17,
+                "modificationDate": 1792351904,
+                "value": "19"
+              },
+              {
+                "capabilityId": 40,
+                "modificationDate": 1792353646,
+                "value": "19"
+              },
+              {
+                "capabilityId": 73,
+                "modificationDate": 1783669605,
+                "value": "2"
+              },
+              {
+                "capabilityId": 75,
+                "modificationDate": 1783669607,
+                "value": "101"
+              },
+              {
+                "capabilityId": 117,
+                "modificationDate": 1792353008,
+                "value": "20.69"
+              },
+              {
+                "capabilityId": 153,
+                "modificationDate": 1792265486,
+                "value": "0"
+              },
+              {
+                "capabilityId": 154,
+                "modificationDate": 1783669605,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 157,
+                "modificationDate": 1792265709,
+                "value": "0"
+              },
+              {
+                "capabilityId": 158,
+                "modificationDate": 1783669607,
+                "value": "120"
+              },
+              {
+                "capabilityId": 159,
+                "modificationDate": 1792265736,
+                "value": "0"
+              },
+              {
+                "capabilityId": 160,
+                "modificationDate": 1783669606,
+                "value": "10.0000000000000000000"
+              },
+              {
+                "capabilityId": 161,
+                "modificationDate": 1783669606,
+                "value": "35.0000000000000000000"
+              },
+              {
+                "capabilityId": 162,
+                "modificationDate": 1783669606,
+                "value": "10.0000000000000000000"
+              },
+              {
+                "capabilityId": 163,
+                "modificationDate": 1783669606,
+                "value": "35.0000000000000000000"
+              },
+              {
+                "capabilityId": 166,
+                "modificationDate": 1783669605,
+                "value": "21"
+              },
+              {
+                "capabilityId": 177,
+                "modificationDate": 1783669606,
+                "value": "24.0000000000000000000"
+              },
+              {
+                "capabilityId": 181,
+                "modificationDate": 1791946810,
+                "value": "4"
+              },
+              {
+                "capabilityId": 184,
+                "modificationDate": 1791830393,
+                "value": "1"
+              },
+              {
+                "capabilityId": 192,
+                "modificationDate": 1783669607,
+                "value": "65.0000000000000000000"
+              },
+              {
+                "capabilityId": 193,
+                "modificationDate": 1783669607,
+                "value": "20.0000000000000000000"
+              },
+              {
+                "capabilityId": 194,
+                "modificationDate": 1783669606,
+                "value": "16.0000000000000000000"
+              },
+              {
+                "capabilityId": 195,
+                "modificationDate": 1783669606,
+                "value": "20.0000000000000000000"
+              },
+              {
+                "capabilityId": 217,
+                "modificationDate": 1783669605,
+                "value": "3075"
+              },
+              {
+                "capabilityId": 218,
+                "modificationDate": 1791737370,
+                "value": "0"
+              },
+              {
+                "capabilityId": 294,
+                "modificationDate": 1783669606,
+                "value": "0.5000000000000000000"
+              },
+              {
+                "capabilityId": 295,
+                "modificationDate": 1783669605,
+                "value": "15"
+              },
+              {
+                "capabilityId": 296,
+                "modificationDate": 1783669605,
+                "value": "60"
+              },
+              {
+                "capabilityId": 303,
+                "modificationDate": 1792136290,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 306,
+                "modificationDate": 1783669605,
+                "value": "8"
+              },
+              {
+                "capabilityId": 341,
+                "modificationDate": 1791946810,
+                "value": "4"
+              },
+              {
+                "capabilityId": 347,
+                "modificationDate": 1783669604,
+                "value": "0"
+              },
+              {
+                "capabilityId": 348,
+                "modificationDate": 1783669604,
+                "value": "1"
+              },
+              {
+                "capabilityId": 350,
+                "modificationDate": 1783669604,
+                "value": "0"
+              },
+              {
+                "capabilityId": 352,
+                "modificationDate": 1783669604,
+                "value": "18"
+              },
+              {
+                "capabilityId": 353,
+                "modificationDate": 1783669604,
+                "value": "19"
+              },
+              {
+                "capabilityId": 354,
+                "modificationDate": 1783669604,
+                "value": "18"
+              },
+              {
+                "capabilityId": 355,
+                "modificationDate": 1783669604,
+                "value": "26"
+              },
+              {
+                "capabilityId": 356,
+                "modificationDate": 1783669605,
+                "value": "24"
+              },
+              {
+                "capabilityId": 357,
+                "modificationDate": 1783669605,
+                "value": "26"
+              },
+              {
+                "capabilityId": 358,
+                "modificationDate": 1783669605,
+                "value": "0"
+              },
+              {
+                "capabilityId": 100000,
+                "modificationDate": 1783669605,
+                "value": "1"
+              },
+              {
+                "capabilityId": 100002,
+                "modificationDate": 1783669605,
+                "value": "0"
+              },
+              {
+                "capabilityId": 100004,
+                "modificationDate": 1783669605,
+                "value": "1"
+              },
+              {
+                "capabilityId": 100010,
+                "modificationDate": 1783669605,
+                "value": "0"
+              },
+              {
+                "capabilityId": 100013,
+                "modificationDate": 1783669605,
+                "value": "0"
+              },
+              {
+                "capabilityId": 100021,
+                "modificationDate": 1783669605,
+                "value": "1"
+              },
+              {
+                "capabilityId": 100022,
+                "modificationDate": 1783669606,
+                "value": "29"
+              },
+              {
+                "capabilityId": 100023,
+                "modificationDate": 1783669606,
+                "value": "3"
+              },
+              {
+                "capabilityId": 100100,
+                "modificationDate": 1783669737,
+                "value": "1"
+              },
+              {
+                "capabilityId": 100260,
+                "modificationDate": 1783669602,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 100300,
+                "modificationDate": 1783669605,
+                "value": "0"
+              },
+              {
+                "capabilityId": 100301,
+                "modificationDate": 1783669605,
+                "value": "56"
+              },
+              {
+                "capabilityId": 100320,
+                "modificationDate": 1791869633,
+                "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100321,
+                "modificationDate": 1791869633,
+                "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100322,
+                "modificationDate": 1791869633,
+                "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100323,
+                "modificationDate": 1791869633,
+                "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100324,
+                "modificationDate": 1791869633,
+                "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100325,
+                "modificationDate": 1791869633,
+                "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100326,
+                "modificationDate": 1791830393,
+                "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100327,
+                "modificationDate": 1783669606,
+                "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100328,
+                "modificationDate": 1783669606,
+                "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100329,
+                "modificationDate": 1783669606,
+                "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100330,
+                "modificationDate": 1783669606,
+                "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100331,
+                "modificationDate": 1783669606,
+                "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100332,
+                "modificationDate": 1783669607,
+                "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100333,
+                "modificationDate": 1783669607,
+                "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100450,
+                "modificationDate": 1783669607,
+                "value": "1"
+              },
+              {
+                "capabilityId": 100600,
+                "modificationDate": 1783669607,
+                "value": "4"
+              },
+              {
+                "capabilityId": 100601,
+                "modificationDate": 1783669607,
+                "value": "4"
+              },
+              {
+                "capabilityId": 100607,
+                "modificationDate": 1783669607,
+                "value": "101"
+              },
+              {
+                "capabilityId": 103014,
+                "modificationDate": 1783669605,
+                "value": "0"
+              },
+              {
+                "capabilityId": 103150,
+                "modificationDate": 1792353008,
+                "value": "1"
+              },
+              {
+                "capabilityId": 103626,
+                "modificationDate": 1783669606,
+                "value": "0.0000000000000000000"
+              },
+              {
+                "capabilityId": 103627,
+                "modificationDate": 1783669606,
+                "value": "0.0000000000000000000"
+              }
+            ]
+          },
+          {
+            "customName": "Eau Chaude",
+            "deviceId": 27797323,
+            "deviceUrl": "MASKED",
+            "gatewayId": 1139778,
+            "masterDeviceId": 27797320,
+            "modelId": 1376,
+            "name": "MASKED",
+            "productId": 47,
+            "tags": [],
+            "gatewaySerialNumber": "MASKED",
+            "longName": "MASKED",
+            "productRange": null,
+            "isAvailable": true,
+            "isAvailableTimestamp": 1791737370,
+            "isRemoteMaintainable": false,
+            "zoneId": 996188,
+            "showInSettings": false,
+            "modelFamily": null,
+            "capabilities": [
+              {
+                "capabilityId": 15,
+                "modificationDate": 1783669606,
+                "value": "2"
+              },
+              {
+                "capabilityId": 22,
+                "modificationDate": 1787076094,
+                "value": "55.00000000000000000000"
+              },
+              {
+                "capabilityId": 23,
+                "modificationDate": 1783669606,
+                "value": "0.0000000000000000000"
+              },
+              {
+                "capabilityId": 86,
+                "modificationDate": 1786798968,
+                "value": "1"
+              },
+              {
+                "capabilityId": 87,
+                "modificationDate": 1783669606,
+                "value": "2"
+              },
+              {
+                "capabilityId": 99,
+                "modificationDate": 1792327003,
+                "value": "0"
+              },
+              {
+                "capabilityId": 111,
+                "modificationDate": 1792349868,
+                "value": "53.17"
+              },
+              {
+                "capabilityId": 165,
+                "modificationDate": 1783669606,
+                "value": "0"
+              },
+              {
+                "capabilityId": 168,
+                "modificationDate": 1783669606,
+                "value": "32001"
+              },
+              {
+                "capabilityId": 210,
+                "modificationDate": 1783669606,
+                "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+              },
+              {
+                "capabilityId": 211,
+                "modificationDate": 1783669606,
+                "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+              },
+              {
+                "capabilityId": 212,
+                "modificationDate": 1783669606,
+                "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+              },
+              {
+                "capabilityId": 213,
+                "modificationDate": 1783669606,
+                "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+              },
+              {
+                "capabilityId": 214,
+                "modificationDate": 1783669606,
+                "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+              },
+              {
+                "capabilityId": 215,
+                "modificationDate": 1783669606,
+                "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+              },
+              {
+                "capabilityId": 216,
+                "modificationDate": 1783669606,
+                "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+              },
+              {
+                "capabilityId": 218,
+                "modificationDate": 1791737370,
+                "value": "0"
+              },
+              {
+                "capabilityId": 223,
+                "modificationDate": 1783669606,
+                "value": "1"
+              },
+              {
+                "capabilityId": 224,
+                "modificationDate": 1783669606,
+                "value": "3"
+              },
+              {
+                "capabilityId": 226,
+                "modificationDate": 1783669602,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 231,
+                "modificationDate": 1787076089,
+                "value": "55.00000000000000000000"
+              },
+              {
+                "capabilityId": 244,
+                "modificationDate": 1783669606,
+                "value": "3"
+              },
+              {
+                "capabilityId": 252,
+                "modificationDate": 1783669606,
+                "value": "65.0000000000000000000"
+              },
+              {
+                "capabilityId": 253,
+                "modificationDate": 1783669606,
+                "value": "15.0000000000000000000"
+              },
+              {
+                "capabilityId": 284,
+                "modificationDate": 1783669606,
+                "value": "0"
+              },
+              {
+                "capabilityId": 310,
+                "modificationDate": 1783669606,
+                "value": "3"
+              },
+              {
+                "capabilityId": 311,
+                "modificationDate": 1783669606,
+                "value": "1"
+              },
+              {
+                "capabilityId": 312,
+                "modificationDate": 1787076099,
+                "value": "55.00000000000000000000"
+              },
+              {
+                "capabilityId": 329,
+                "modificationDate": 1783669605,
+                "value": "1"
+              },
+              {
+                "capabilityId": 330,
+                "modificationDate": 1783669606,
+                "value": "15"
+              },
+              {
+                "capabilityId": 331,
+                "modificationDate": 1783669606,
+                "value": "1440"
+              },
+              {
+                "capabilityId": 332,
+                "modificationDate": 1783669606,
+                "value": "15"
+              },
+              {
+                "capabilityId": 333,
+                "modificationDate": 1783669606,
+                "value": "120"
+              },
+              {
+                "capabilityId": 336,
+                "modificationDate": 1783669606,
+                "value": "10"
+              },
+              {
+                "capabilityId": 337,
+                "modificationDate": 1786798968,
+                "value": "6"
+              },
+              {
+                "capabilityId": 338,
+                "modificationDate": 1786798968,
+                "value": "0"
+              },
+              {
+                "capabilityId": 339,
+                "modificationDate": 1792327003,
+                "value": "2"
+              },
+              {
+                "capabilityId": 340,
+                "modificationDate": 1783669605,
+                "value": "1"
+              },
+              {
+                "capabilityId": 105011,
+                "modificationDate": 1783669606,
+                "value": "32001"
+              },
+              {
+                "capabilityId": 105012,
+                "modificationDate": 1783669606,
+                "value": "1"
+              },
+              {
+                "capabilityId": 105300,
+                "modificationDate": 1783669606,
+                "value": "65.0000000000000000000"
+              },
+              {
+                "capabilityId": 105301,
+                "modificationDate": 1783669606,
+                "value": "50"
+              },
+              {
+                "capabilityId": 105636,
+                "modificationDate": 1785266238,
+                "value": "0"
+              },
+              {
+                "capabilityId": 105906,
+                "modificationDate": 1787076095,
+                "value": "81"
+              }
+            ]
+          },
+          {
+            "customName": "GENERATOR_0 DEFAULT",
+            "deviceId": 27797324,
+            "deviceUrl": "MASKED",
+            "gatewayId": 1139778,
+            "masterDeviceId": 27797320,
+            "modelId": 1391,
+            "name": "MASKED",
+            "productId": 58,
+            "tags": [],
+            "gatewaySerialNumber": "MASKED",
+            "longName": "MASKED",
+            "productRange": null,
+            "isAvailable": true,
+            "isAvailableTimestamp": 1791737370,
+            "isRemoteMaintainable": false,
+            "zoneId": 996188,
+            "showInSettings": false,
+            "modelFamily": null,
+            "capabilities": [
+              {
+                "capabilityId": 6,
+                "modificationDate": 1792136290,
+                "value": "0"
+              },
+              {
+                "capabilityId": 25,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 26,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 28,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 29,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 49,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 50,
+                "modificationDate": 1792334034,
+                "value": "0"
+              },
+              {
+                "capabilityId": 90,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 100,
+                "modificationDate": 1792335387,
+                "value": "1.36"
+              },
+              {
+                "capabilityId": 109,
+                "modificationDate": 1792343578,
+                "value": "26.13"
+              },
+              {
+                "capabilityId": 116,
+                "modificationDate": 1792338188,
+                "value": "26.77"
+              },
+              {
+                "capabilityId": 218,
+                "modificationDate": 1791737370,
+                "value": "0"
+              },
+              {
+                "capabilityId": 299,
+                "modificationDate": 1783669606,
+                "value": "1"
+              }
+            ]
+          }
+        ],
+        "gateways": [
+          {
+            "id": "MASKED",
+            "serialNumber": "MASKED",
+            "isAlive": true,
+            "setupId": "MASKED",
+            "type": 1000
+          }
+        ],
+        "zones": [
+          {
+            "id": "MASKED",
+            "name": "MASKED",
+            "zoneType": 2,
+            "numberOfDevices": 3
+          },
+          {
+            "id": "MASKED",
+            "name": "MASKED",
+            "zoneType": 29,
+            "numberOfDevices": 1
+          },
+          {
+            "id": "MASKED",
+            "name": "MASKED",
+            "zoneType": 1,
+            "numberOfDevices": 1
+          }
+        ]
+      }
+    ]
+  },
+  "capabilities": {
+    "27797320": [
+      200,
+      [
+        {
+          "capabilityId": 8,
+          "modificationDate": 1792350474,
+          "value": "3000"
+        },
+        {
+          "capabilityId": 9,
+          "modificationDate": 1792350474,
+          "value": "3000"
+        },
+        {
+          "capabilityId": 11,
+          "modificationDate": 1783669608,
+          "value": "1200"
+        },
+        {
+          "capabilityId": 21,
+          "modificationDate": 1783669607,
+          "value": "0"
+        },
+        {
+          "capabilityId": 23,
+          "modificationDate": 1787076089,
+          "value": "55.00000000000000000000"
+        },
+        {
+          "capabilityId": 39,
+          "modificationDate": 1783669606,
+          "value": "40.0000000000000000000"
+        },
+        {
+          "capabilityId": 57,
+          "modificationDate": 1792342181,
+          "value": "102040"
+        },
+        {
+          "capabilityId": 59,
+          "modificationDate": 1792327108,
+          "value": "190432"
+        },
+        {
+          "capabilityId": 60,
+          "modificationDate": 1783669605,
+          "value": null
+        },
+        {
+          "capabilityId": 88,
+          "modificationDate": 1783669605,
+          "value": "MASKED"
+        },
+        {
+          "capabilityId": 91,
+          "modificationDate": 1792327003,
+          "value": "1"
+        },
+        {
+          "capabilityId": 93,
+          "modificationDate": 1783669605,
+          "value": "1"
+        },
+        {
+          "capabilityId": 94,
+          "modificationDate": 1783669605,
+          "value": "MASKED"
+        },
+        {
+          "capabilityId": 106,
+          "modificationDate": 1783669608,
+          "value": "9"
+        },
+        {
+          "capabilityId": 109,
+          "modificationDate": 1792350192,
+          "value": "26.13"
+        },
+        {
+          "capabilityId": 112,
+          "modificationDate": 1792337588,
+          "value": "0"
+        },
+        {
+          "capabilityId": 119,
+          "modificationDate": 1792348463,
+          "value": "10.02"
+        },
+        {
+          "capabilityId": 120,
+          "modificationDate": 1783669606,
+          "value": "5"
+        },
+        {
+          "capabilityId": 150,
+          "modificationDate": 1792136290,
+          "value": "[[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]"
+        },
+        {
+          "capabilityId": 152,
+          "modificationDate": 1786798968,
+          "value": "0"
+        },
+        {
+          "capabilityId": 164,
+          "modificationDate": 1783669605,
+          "value": "1298"
+        },
+        {
+          "capabilityId": 171,
+          "modificationDate": 1783669605,
+          "value": "35.0000000000000000000"
+        },
+        {
+          "capabilityId": 172,
+          "modificationDate": 1783669605,
+          "value": "10.0000000000000000000"
+        },
+        {
+          "capabilityId": 179,
+          "modificationDate": 1792008776,
+          "value": "-57"
+        },
+        {
+          "capabilityId": 180,
+          "modificationDate": 1792136290,
+          "value": "100"
+        },
+        {
+          "capabilityId": 182,
+          "modificationDate": 1783669606,
+          "value": "0"
+        },
+        {
+          "capabilityId": 188,
+          "modificationDate": 1783669605,
+          "value": "3"
+        },
+        {
+          "capabilityId": 218,
+          "modificationDate": 1791737370,
+          "value": "0"
+        },
+        {
+          "capabilityId": 222,
+          "modificationDate": 1786798978,
+          "value": "MASKED"
+        },
+        {
+          "capabilityId": 315,
+          "modificationDate": 1783669602,
+          "value": "7200"
+        },
+        {
+          "capabilityId": 328,
+          "modificationDate": 1792136290,
+          "value": "0"
+        },
+        {
+          "capabilityId": 329,
+          "modificationDate": 1783669603,
+          "value": "0"
+        },
+        {
+          "capabilityId": 334,
+          "modificationDate": 1792136290,
+          "value": "0"
+        },
+        {
+          "capabilityId": 335,
+          "modificationDate": 1783669605,
+          "value": "MASKED"
+        },
+        {
+          "capabilityId": 342,
+          "modificationDate": 1787076089,
+          "value": "55.00000000000000000000"
+        },
+        {
+          "capabilityId": 345,
+          "modificationDate": 1792136290,
+          "value": "0"
+        },
+        {
+          "capabilityId": 346,
+          "modificationDate": 1783669603,
+          "value": "0"
+        },
+        {
+          "capabilityId": 349,
+          "modificationDate": 1783669603,
+          "value": "21"
+        },
+        {
+          "capabilityId": 351,
+          "modificationDate": 1783669603,
+          "value": "0"
+        },
+        {
+          "capabilityId": 370,
+          "modificationDate": 1790760801,
+          "value": "0"
+        },
+        {
+          "capabilityId": 380,
+          "modificationDate": 1792136290,
+          "value": "100"
+        },
+        {
+          "capabilityId": 381,
+          "modificationDate": 1783669605,
+          "value": "MASKED"
+        },
+        {
+          "capabilityId": 100636,
+          "modificationDate": 1785266238,
+          "value": "0"
+        },
+        {
+          "capabilityId": 101302,
+          "modificationDate": 1783669605,
+          "value": "1"
+        },
+        {
+          "capabilityId": 107060,
+          "modificationDate": 1783669607,
+          "value": "0"
+        },
+        {
+          "capabilityId": 107078,
+          "modificationDate": 1783669607,
+          "value": "0"
+        },
+        {
+          "capabilityId": 107079,
+          "modificationDate": 1783669607,
+          "value": "2.5800000000000000000"
+        },
+        {
+          "capabilityId": 107083,
+          "modificationDate": 1783669607,
+          "value": "1"
+        },
+        {
+          "capabilityId": 107451,
+          "modificationDate": 1783669607,
+          "value": "MASKED"
+        },
+        {
+          "capabilityId": 107452,
+          "modificationDate": 1783669607,
+          "value": "MASKED"
+        },
+        {
+          "capabilityId": 107453,
+          "modificationDate": 1783669607,
+          "value": "MASKED"
+        },
+        {
+          "capabilityId": 207451,
+          "modificationDate": 1783669607,
+          "value": "MASKED"
+        }
+      ]
+    ],
+    "27797321": [
+      200,
+      [
+        {
+          "capabilityId": 19,
+          "modificationDate": 1792337683,
+          "value": "20"
+        },
+        {
+          "capabilityId": 109,
+          "modificationDate": 1792350192,
+          "value": "25.86"
+        },
+        {
+          "capabilityId": 218,
+          "modificationDate": 1791737370,
+          "value": "0"
+        },
+        {
+          "capabilityId": 106000,
+          "modificationDate": 1783669606,
+          "value": "1"
+        }
+      ]
+    ],
+    "27797322": [
+      200,
+      [
+        {
+          "capabilityId": 7,
+          "modificationDate": 1783669730,
+          "value": "1"
+        },
+        {
+          "capabilityId": 17,
+          "modificationDate": 1792351904,
+          "value": "19"
+        },
+        {
+          "capabilityId": 40,
+          "modificationDate": 1792353646,
+          "value": "19"
+        },
+        {
+          "capabilityId": 73,
+          "modificationDate": 1783669605,
+          "value": "2"
+        },
+        {
+          "capabilityId": 75,
+          "modificationDate": 1783669607,
+          "value": "101"
+        },
+        {
+          "capabilityId": 117,
+          "modificationDate": 1792353008,
+          "value": "20.69"
+        },
+        {
+          "capabilityId": 153,
+          "modificationDate": 1792265486,
+          "value": "0"
+        },
+        {
+          "capabilityId": 154,
+          "modificationDate": 1783669605,
+          "value": "MASKED"
+        },
+        {
+          "capabilityId": 157,
+          "modificationDate": 1792265709,
+          "value": "0"
+        },
+        {
+          "capabilityId": 158,
+          "modificationDate": 1783669607,
+          "value": "120"
+        },
+        {
+          "capabilityId": 159,
+          "modificationDate": 1792265736,
+          "value": "0"
+        },
+        {
+          "capabilityId": 160,
+          "modificationDate": 1783669606,
+          "value": "10.0000000000000000000"
+        },
+        {
+          "capabilityId": 161,
+          "modificationDate": 1783669606,
+          "value": "35.0000000000000000000"
+        },
+        {
+          "capabilityId": 162,
+          "modificationDate": 1783669606,
+          "value": "10.0000000000000000000"
+        },
+        {
+          "capabilityId": 163,
+          "modificationDate": 1783669606,
+          "value": "35.0000000000000000000"
+        },
+        {
+          "capabilityId": 166,
+          "modificationDate": 1783669605,
+          "value": "21"
+        },
+        {
+          "capabilityId": 177,
+          "modificationDate": 1783669606,
+          "value": "24.0000000000000000000"
+        },
+        {
+          "capabilityId": 181,
+          "modificationDate": 1791946810,
+          "value": "4"
+        },
+        {
+          "capabilityId": 184,
+          "modificationDate": 1791830393,
+          "value": "1"
+        },
+        {
+          "capabilityId": 192,
+          "modificationDate": 1783669607,
+          "value": "65.0000000000000000000"
+        },
+        {
+          "capabilityId": 193,
+          "modificationDate": 1783669607,
+          "value": "20.0000000000000000000"
+        },
+        {
+          "capabilityId": 194,
+          "modificationDate": 1783669606,
+          "value": "16.0000000000000000000"
+        },
+        {
+          "capabilityId": 195,
+          "modificationDate": 1783669606,
+          "value": "20.0000000000000000000"
+        },
+        {
+          "capabilityId": 217,
+          "modificationDate": 1783669605,
+          "value": "3075"
+        },
+        {
+          "capabilityId": 218,
+          "modificationDate": 1791737370,
+          "value": "0"
+        },
+        {
+          "capabilityId": 294,
+          "modificationDate": 1783669606,
+          "value": "0.5000000000000000000"
+        },
+        {
+          "capabilityId": 295,
+          "modificationDate": 1783669605,
+          "value": "15"
+        },
+        {
+          "capabilityId": 296,
+          "modificationDate": 1783669605,
+          "value": "60"
+        },
+        {
+          "capabilityId": 303,
+          "modificationDate": 1792136290,
+          "value": "MASKED"
+        },
+        {
+          "capabilityId": 306,
+          "modificationDate": 1783669605,
+          "value": "8"
+        },
+        {
+          "capabilityId": 341,
+          "modificationDate": 1791946810,
+          "value": "4"
+        },
+        {
+          "capabilityId": 347,
+          "modificationDate": 1783669604,
+          "value": "0"
+        },
+        {
+          "capabilityId": 348,
+          "modificationDate": 1783669604,
+          "value": "1"
+        },
+        {
+          "capabilityId": 350,
+          "modificationDate": 1783669604,
+          "value": "0"
+        },
+        {
+          "capabilityId": 352,
+          "modificationDate": 1783669604,
+          "value": "18"
+        },
+        {
+          "capabilityId": 353,
+          "modificationDate": 1783669604,
+          "value": "19"
+        },
+        {
+          "capabilityId": 354,
+          "modificationDate": 1783669604,
+          "value": "18"
+        },
+        {
+          "capabilityId": 355,
+          "modificationDate": 1783669604,
+          "value": "26"
+        },
+        {
+          "capabilityId": 356,
+          "modificationDate": 1783669605,
+          "value": "24"
+        },
+        {
+          "capabilityId": 357,
+          "modificationDate": 1783669605,
+          "value": "26"
+        },
+        {
+          "capabilityId": 358,
+          "modificationDate": 1783669605,
+          "value": "0"
+        },
+        {
+          "capabilityId": 100000,
+          "modificationDate": 1783669605,
+          "value": "1"
+        },
+        {
+          "capabilityId": 100002,
+          "modificationDate": 1783669605,
+          "value": "0"
+        },
+        {
+          "capabilityId": 100004,
+          "modificationDate": 1783669605,
+          "value": "1"
+        },
+        {
+          "capabilityId": 100010,
+          "modificationDate": 1783669605,
+          "value": "0"
+        },
+        {
+          "capabilityId": 100013,
+          "modificationDate": 1783669605,
+          "value": "0"
+        },
+        {
+          "capabilityId": 100021,
+          "modificationDate": 1783669605,
+          "value": "1"
+        },
+        {
+          "capabilityId": 100022,
+          "modificationDate": 1783669606,
+          "value": "29"
+        },
+        {
+          "capabilityId": 100023,
+          "modificationDate": 1783669606,
+          "value": "3"
+        },
+        {
+          "capabilityId": 100100,
+          "modificationDate": 1783669737,
+          "value": "1"
+        },
+        {
+          "capabilityId": 100260,
+          "modificationDate": 1783669602,
+          "value": "MASKED"
+        },
+        {
+          "capabilityId": 100300,
+          "modificationDate": 1783669605,
+          "value": "0"
+        },
+        {
+          "capabilityId": 100301,
+          "modificationDate": 1783669605,
+          "value": "56"
+        },
+        {
+          "capabilityId": 100320,
+          "modificationDate": 1791869633,
+          "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+        },
+        {
+          "capabilityId": 100321,
+          "modificationDate": 1791869633,
+          "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+        },
+        {
+          "capabilityId": 100322,
+          "modificationDate": 1791869633,
+          "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+        },
+        {
+          "capabilityId": 100323,
+          "modificationDate": 1791869633,
+          "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+        },
+        {
+          "capabilityId": 100324,
+          "modificationDate": 1791869633,
+          "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+        },
+        {
+          "capabilityId": 100325,
+          "modificationDate": 1791869633,
+          "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+        },
+        {
+          "capabilityId": 100326,
+          "modificationDate": 1791830393,
+          "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+        },
+        {
+          "capabilityId": 100327,
+          "modificationDate": 1783669606,
+          "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+        },
+        {
+          "capabilityId": 100328,
+          "modificationDate": 1783669606,
+          "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+        },
+        {
+          "capabilityId": 100329,
+          "modificationDate": 1783669606,
+          "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+        },
+        {
+          "capabilityId": 100330,
+          "modificationDate": 1783669606,
+          "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+        },
+        {
+          "capabilityId": 100331,
+          "modificationDate": 1783669606,
+          "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+        },
+        {
+          "capabilityId": 100332,
+          "modificationDate": 1783669607,
+          "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+        },
+        {
+          "capabilityId": 100333,
+          "modificationDate": 1783669607,
+          "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+        },
+        {
+          "capabilityId": 100450,
+          "modificationDate": 1783669607,
+          "value": "1"
+        },
+        {
+          "capabilityId": 100600,
+          "modificationDate": 1783669607,
+          "value": "4"
+        },
+        {
+          "capabilityId": 100601,
+          "modificationDate": 1783669607,
+          "value": "4"
+        },
+        {
+          "capabilityId": 100607,
+          "modificationDate": 1783669607,
+          "value": "101"
+        },
+        {
+          "capabilityId": 103014,
+          "modificationDate": 1783669605,
+          "value": "0"
+        },
+        {
+          "capabilityId": 103150,
+          "modificationDate": 1792353008,
+          "value": "1"
+        },
+        {
+          "capabilityId": 103626,
+          "modificationDate": 1783669606,
+          "value": "0.0000000000000000000"
+        },
+        {
+          "capabilityId": 103627,
+          "modificationDate": 1783669606,
+          "value": "0.0000000000000000000"
+        }
+      ]
+    ],
+    "27797323": [
+      200,
+      [
+        {
+          "capabilityId": 15,
+          "modificationDate": 1783669606,
+          "value": "2"
+        },
+        {
+          "capabilityId": 22,
+          "modificationDate": 1787076094,
+          "value": "55.00000000000000000000"
+        },
+        {
+          "capabilityId": 23,
+          "modificationDate": 1783669606,
+          "value": "0.0000000000000000000"
+        },
+        {
+          "capabilityId": 86,
+          "modificationDate": 1786798968,
+          "value": "1"
+        },
+        {
+          "capabilityId": 87,
+          "modificationDate": 1783669606,
+          "value": "2"
+        },
+        {
+          "capabilityId": 99,
+          "modificationDate": 1792327003,
+          "value": "0"
+        },
+        {
+          "capabilityId": 111,
+          "modificationDate": 1792349868,
+          "value": "53.17"
+        },
+        {
+          "capabilityId": 165,
+          "modificationDate": 1783669606,
+          "value": "0"
+        },
+        {
+          "capabilityId": 168,
+          "modificationDate": 1783669606,
+          "value": "32001"
+        },
+        {
+          "capabilityId": 210,
+          "modificationDate": 1783669606,
+          "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+        },
+        {
+          "capabilityId": 211,
+          "modificationDate": 1783669606,
+          "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+        },
+        {
+          "capabilityId": 212,
+          "modificationDate": 1783669606,
+          "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+        },
+        {
+          "capabilityId": 213,
+          "modificationDate": 1783669606,
+          "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+        },
+        {
+          "capabilityId": 214,
+          "modificationDate": 1783669606,
+          "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+        },
+        {
+          "capabilityId": 215,
+          "modificationDate": 1783669606,
+          "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+        },
+        {
+          "capabilityId": 216,
+          "modificationDate": 1783669606,
+          "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+        },
+        {
+          "capabilityId": 218,
+          "modificationDate": 1791737370,
+          "value": "0"
+        },
+        {
+          "capabilityId": 223,
+          "modificationDate": 1783669606,
+          "value": "1"
+        },
+        {
+          "capabilityId": 224,
+          "modificationDate": 1783669606,
+          "value": "3"
+        },
+        {
+          "capabilityId": 226,
+          "modificationDate": 1783669602,
+          "value": "MASKED"
+        },
+        {
+          "capabilityId": 231,
+          "modificationDate": 1787076089,
+          "value": "55.00000000000000000000"
+        },
+        {
+          "capabilityId": 244,
+          "modificationDate": 1783669606,
+          "value": "3"
+        },
+        {
+          "capabilityId": 252,
+          "modificationDate": 1783669606,
+          "value": "65.0000000000000000000"
+        },
+        {
+          "capabilityId": 253,
+          "modificationDate": 1783669606,
+          "value": "15.0000000000000000000"
+        },
+        {
+          "capabilityId": 284,
+          "modificationDate": 1783669606,
+          "value": "0"
+        },
+        {
+          "capabilityId": 310,
+          "modificationDate": 1783669606,
+          "value": "3"
+        },
+        {
+          "capabilityId": 311,
+          "modificationDate": 1783669606,
+          "value": "1"
+        },
+        {
+          "capabilityId": 312,
+          "modificationDate": 1787076099,
+          "value": "55.00000000000000000000"
+        },
+        {
+          "capabilityId": 329,
+          "modificationDate": 1783669605,
+          "value": "1"
+        },
+        {
+          "capabilityId": 330,
+          "modificationDate": 1783669606,
+          "value": "15"
+        },
+        {
+          "capabilityId": 331,
+          "modificationDate": 1783669606,
+          "value": "1440"
+        },
+        {
+          "capabilityId": 332,
+          "modificationDate": 1783669606,
+          "value": "15"
+        },
+        {
+          "capabilityId": 333,
+          "modificationDate": 1783669606,
+          "value": "120"
+        },
+        {
+          "capabilityId": 336,
+          "modificationDate": 1783669606,
+          "value": "10"
+        },
+        {
+          "capabilityId": 337,
+          "modificationDate": 1786798968,
+          "value": "6"
+        },
+        {
+          "capabilityId": 338,
+          "modificationDate": 1786798968,
+          "value": "0"
+        },
+        {
+          "capabilityId": 339,
+          "modificationDate": 1792327003,
+          "value": "2"
+        },
+        {
+          "capabilityId": 340,
+          "modificationDate": 1783669605,
+          "value": "1"
+        },
+        {
+          "capabilityId": 105011,
+          "modificationDate": 1783669606,
+          "value": "32001"
+        },
+        {
+          "capabilityId": 105012,
+          "modificationDate": 1783669606,
+          "value": "1"
+        },
+        {
+          "capabilityId": 105300,
+          "modificationDate": 1783669606,
+          "value": "65.0000000000000000000"
+        },
+        {
+          "capabilityId": 105301,
+          "modificationDate": 1783669606,
+          "value": "50"
+        },
+        {
+          "capabilityId": 105636,
+          "modificationDate": 1785266238,
+          "value": "0"
+        },
+        {
+          "capabilityId": 105906,
+          "modificationDate": 1787076095,
+          "value": "81"
+        }
+      ]
+    ],
+    "27797324": [
+      200,
+      [
+        {
+          "capabilityId": 6,
+          "modificationDate": 1792136290,
+          "value": "0"
+        },
+        {
+          "capabilityId": 25,
+          "modificationDate": 1783669607,
+          "value": "0"
+        },
+        {
+          "capabilityId": 26,
+          "modificationDate": 1783669607,
+          "value": "0"
+        },
+        {
+          "capabilityId": 28,
+          "modificationDate": 1783669607,
+          "value": "0"
+        },
+        {
+          "capabilityId": 29,
+          "modificationDate": 1783669607,
+          "value": "0"
+        },
+        {
+          "capabilityId": 49,
+          "modificationDate": 1783669607,
+          "value": "0"
+        },
+        {
+          "capabilityId": 50,
+          "modificationDate": 1792334034,
+          "value": "0"
+        },
+        {
+          "capabilityId": 90,
+          "modificationDate": 1783669607,
+          "value": "0"
+        },
+        {
+          "capabilityId": 100,
+          "modificationDate": 1792335387,
+          "value": "1.36"
+        },
+        {
+          "capabilityId": 109,
+          "modificationDate": 1792343578,
+          "value": "26.13"
+        },
+        {
+          "capabilityId": 116,
+          "modificationDate": 1792338188,
+          "value": "26.77"
+        },
+        {
+          "capabilityId": 218,
+          "modificationDate": 1791737370,
+          "value": "0"
+        },
+        {
+          "capabilityId": 299,
+          "modificationDate": 1783669606,
+          "value": "1"
+        }
+      ]
+    ]
+  },
+  "consumptions_daily": [
+    200,
+    [
+      {
+        "serialNumber": "MASKED",
+        "deviceId": null,
+        "category": 1,
+        "type": 1,
+        "unit": 1,
+        "currency": 101,
+        "deviceUrl": null,
+        "zoneId": null,
+        "zoneLabel": null,
+        "consumptionPeriods": [
+          {
+            "consumedQuantity": 0.14,
+            "cost": 0.03,
+            "date": 1789603200,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.1,
+            "cost": 0.02,
+            "date": 1789603200,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.19,
+            "cost": 0.04,
+            "date": 1789689600,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.12,
+            "cost": 0.02,
+            "date": 1789689600,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.12,
+            "cost": 0.01,
+            "date": 1789776000,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.16,
+            "cost": 0.03,
+            "date": 1789776000,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.14,
+            "cost": 0.03,
+            "date": 1789862400,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.14,
+            "cost": 0.02,
+            "date": 1789862400,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.18,
+            "cost": 0.04,
+            "date": 1789948800,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.09,
+            "cost": 0.01,
+            "date": 1789948800,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.23,
+            "cost": 0.05,
+            "date": 1790035200,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.09,
+            "cost": 0.02,
+            "date": 1790035200,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.09,
+            "cost": 0.02,
+            "date": 1790121600,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.17,
+            "cost": 0.04,
+            "date": 1790121600,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.18,
+            "cost": 0.04,
+            "date": 1790208000,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.09,
+            "cost": 0.01,
+            "date": 1790208000,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.11,
+            "cost": 0.02,
+            "date": 1790294400,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.21,
+            "cost": 0.04,
+            "date": 1790294400,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.12,
+            "cost": 0.02,
+            "date": 1790380800,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.2,
+            "cost": 0.05,
+            "date": 1790380800,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.15,
+            "cost": 0.03,
+            "date": 1790467200,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.13,
+            "cost": 0.02,
+            "date": 1790467200,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.18,
+            "cost": 0.04,
+            "date": 1790553600,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.1,
+            "cost": 0.02,
+            "date": 1790553600,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.11,
+            "cost": 0.01,
+            "date": 1790640000,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.19,
+            "cost": 0.04,
+            "date": 1790640000,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.15,
+            "cost": 0.03,
+            "date": 1790726400,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.12,
+            "cost": 0.02,
+            "date": 1790726400,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.18,
+            "cost": 0.04,
+            "date": 1790812800,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.1,
+            "cost": 0.02,
+            "date": 1790812800,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 4.51,
+            "cost": 0.93,
+            "date": 1790899200,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.1,
+            "cost": 0.02,
+            "date": 1790899200,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.21,
+            "cost": 0.05,
+            "date": 1790985600,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.21,
+            "cost": 0.03,
+            "date": 1790985600,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.15,
+            "cost": 0.04,
+            "date": 1791072000,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.1,
+            "cost": 0.01,
+            "date": 1791072000,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.17,
+            "cost": 0.04,
+            "date": 1791158400,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.09,
+            "cost": 0.01,
+            "date": 1791158400,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.12,
+            "cost": 0.02,
+            "date": 1791244800,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.19,
+            "cost": 0.04,
+            "date": 1791244800,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.29,
+            "cost": 0.06,
+            "date": 1791331200,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.09,
+            "cost": 0.01,
+            "date": 1791331200,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.12,
+            "cost": 0.02,
+            "date": 1791417600,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.18,
+            "cost": 0.04,
+            "date": 1791417600,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 3.42,
+            "cost": 0.54,
+            "date": 1791504000,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 9.15,
+            "cost": 1.89,
+            "date": 1791504000,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 2.58,
+            "cost": 0.53,
+            "date": 1791590400,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 2.43,
+            "cost": 0.38,
+            "date": 1791590400,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.84,
+            "cost": 0.13,
+            "date": 1791676800,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 7.35,
+            "cost": 1.52,
+            "date": 1791676800,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 4.08,
+            "cost": 0.84,
+            "date": 1791763200,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 4.48,
+            "cost": 0.71,
+            "date": 1791763200,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.86,
+            "cost": 0.14,
+            "date": 1791849600,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.38,
+            "cost": 0.29,
+            "date": 1791849600,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 2.07,
+            "cost": 0.33,
+            "date": 1791936000,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 2.14,
+            "cost": 0.44,
+            "date": 1791936000,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.39,
+            "cost": 0.08,
+            "date": 1792022400,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 5.52,
+            "cost": 0.87,
+            "date": 1792022400,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.46,
+            "cost": 0.07,
+            "date": 1792108800,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.15,
+            "cost": 0.03,
+            "date": 1792108800,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.4,
+            "cost": 0.06,
+            "date": 1792195200,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 3.41,
+            "cost": 0.7,
+            "date": 1792195200,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 8.42,
+            "cost": 1.33,
+            "date": 1792281600,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.32,
+            "cost": 0.27,
+            "date": 1792281600,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          }
+        ]
+      },
+      {
+        "serialNumber": "MASKED",
+        "deviceId": null,
+        "category": 2,
+        "type": 1,
+        "unit": 1,
+        "currency": 101,
+        "deviceUrl": null,
+        "zoneId": null,
+        "zoneLabel": null,
+        "consumptionPeriods": [
+          {
+            "consumedQuantity": 2.86,
+            "cost": 0.45,
+            "date": 1789603200,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.3,
+            "cost": 0.27,
+            "date": 1789603200,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.57,
+            "cost": 0.32,
+            "date": 1789689600,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 2.85,
+            "cost": 0.45,
+            "date": 1789689600,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.9,
+            "cost": 0.39,
+            "date": 1789776000,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 3.18,
+            "cost": 0.5,
+            "date": 1789776000,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.86,
+            "cost": 0.29,
+            "date": 1789862400,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.1,
+            "cost": 0.23,
+            "date": 1789862400,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.93,
+            "cost": 0.15,
+            "date": 1789948800,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 2.37,
+            "cost": 0.49,
+            "date": 1789948800,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.19,
+            "cost": 0.25,
+            "date": 1790035200,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.72,
+            "cost": 0.11,
+            "date": 1790035200,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.56,
+            "cost": 0.32,
+            "date": 1790121600,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.94,
+            "cost": 0.15,
+            "date": 1790121600,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.24,
+            "cost": 0.26,
+            "date": 1790208000,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.07,
+            "cost": 0.17,
+            "date": 1790208000,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.75,
+            "cost": 0.12,
+            "date": 1790294400,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.41,
+            "cost": 0.29,
+            "date": 1790294400,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.76,
+            "cost": 0.12,
+            "date": 1790380800,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.24,
+            "cost": 0.26,
+            "date": 1790380800,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.61,
+            "cost": 0.33,
+            "date": 1790467200,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.81,
+            "cost": 0.13,
+            "date": 1790467200,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.39,
+            "cost": 0.22,
+            "date": 1790553600,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 2.09,
+            "cost": 0.43,
+            "date": 1790553600,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.64,
+            "cost": 0.1,
+            "date": 1790640000,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.3,
+            "cost": 0.27,
+            "date": 1790640000,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.75,
+            "cost": 0.12,
+            "date": 1790726400,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.32,
+            "cost": 0.27,
+            "date": 1790726400,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 2.55,
+            "cost": 0.41,
+            "date": 1790812800,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.36,
+            "cost": 0.28,
+            "date": 1790812800,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.3,
+            "cost": 0.21,
+            "date": 1790899200,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.2,
+            "cost": 0.25,
+            "date": 1790899200,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 2.71,
+            "cost": 0.43,
+            "date": 1790985600,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.59,
+            "cost": 0.33,
+            "date": 1790985600,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.31,
+            "cost": 0.21,
+            "date": 1791072000,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 2.18,
+            "cost": 0.45,
+            "date": 1791072000,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.3,
+            "cost": 0.27,
+            "date": 1791158400,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.62,
+            "cost": 0.1,
+            "date": 1791158400,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 3,
+            "cost": 0.48,
+            "date": 1791244800,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.54,
+            "cost": 0.32,
+            "date": 1791244800,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.16,
+            "cost": 0.18,
+            "date": 1791331200,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.11,
+            "cost": 0.23,
+            "date": 1791331200,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.17,
+            "cost": 0.18,
+            "date": 1791417600,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.48,
+            "cost": 0.31,
+            "date": 1791417600,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.21,
+            "cost": 0.25,
+            "date": 1791504000,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.6,
+            "cost": 0.09,
+            "date": 1791504000,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.22,
+            "cost": 0.25,
+            "date": 1791590400,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.59,
+            "cost": 0.09,
+            "date": 1791590400,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.34,
+            "cost": 0.28,
+            "date": 1791676800,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.68,
+            "cost": 0.11,
+            "date": 1791676800,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.13,
+            "cost": 0.18,
+            "date": 1791763200,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.83,
+            "cost": 0.38,
+            "date": 1791763200,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.11,
+            "cost": 0.23,
+            "date": 1791849600,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.53,
+            "cost": 0.08,
+            "date": 1791849600,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.62,
+            "cost": 0.1,
+            "date": 1791936000,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.26,
+            "cost": 0.26,
+            "date": 1791936000,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.72,
+            "cost": 0.11,
+            "date": 1792022400,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.31,
+            "cost": 0.27,
+            "date": 1792022400,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.41,
+            "cost": 0.29,
+            "date": 1792108800,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.21,
+            "cost": 0.19,
+            "date": 1792108800,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.74,
+            "cost": 0.12,
+            "date": 1792195200,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.09,
+            "cost": 0.23,
+            "date": 1792195200,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 1.38,
+            "cost": 0.29,
+            "date": 1792281600,
+            "mode": 1,
+            "producedQuantity": null,
+            "profil": 0
+          },
+          {
+            "consumedQuantity": 0.67,
+            "cost": 0.11,
+            "date": 1792281600,
+            "mode": 2,
+            "producedQuantity": null,
+            "profil": 0
+          }
+        ]
+      }
+    ]
+  ],
+  "setupview_2": {
+    "status": 200,
+    "at": 1792353914,
+    "body": [
+      {
+        "id": "MASKED",
+        "name": "MASKED",
+        "address": "MASKED",
+        "numberOfRooms": 6,
+        "numberOfPersons": 0,
+        "area": 107,
+        "type": 2,
+        "mainHeatingEnergy": 1,
+        "mainDHWEnergy": 1,
+        "setupBuildingDate": 3,
+        "rateLimit": 30,
+        "currency": "EUR",
+        "absence": {
+          "endDate": null,
+          "startDate": null
+        },
+        "devices": [
+          {
+            "customName": "CESA V2 DEFAULT",
+            "deviceId": 27797320,
+            "deviceUrl": "MASKED",
+            "gatewayId": 1139778,
+            "masterDeviceId": null,
+            "modelId": 1693,
+            "name": "MASKED",
+            "productId": 54,
+            "tags": [],
+            "gatewaySerialNumber": "MASKED",
+            "longName": "MASKED",
+            "productRange": null,
+            "isAvailable": true,
+            "isAvailableTimestamp": 1791737370,
+            "isRemoteMaintainable": true,
+            "zoneId": 996188,
+            "showInSettings": true,
+            "modelFamily": "Heat_Pump",
+            "capabilities": [
+              {
+                "capabilityId": 8,
+                "modificationDate": 1792350474,
+                "value": "3000"
+              },
+              {
+                "capabilityId": 9,
+                "modificationDate": 1792350474,
+                "value": "3000"
+              },
+              {
+                "capabilityId": 11,
+                "modificationDate": 1783669608,
+                "value": "1200"
+              },
+              {
+                "capabilityId": 21,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 23,
+                "modificationDate": 1787076089,
+                "value": "55.00000000000000000000"
+              },
+              {
+                "capabilityId": 39,
+                "modificationDate": 1783669606,
+                "value": "40.0000000000000000000"
+              },
+              {
+                "capabilityId": 57,
+                "modificationDate": 1792342181,
+                "value": "102040"
+              },
+              {
+                "capabilityId": 59,
+                "modificationDate": 1792327108,
+                "value": "190432"
+              },
+              {
+                "capabilityId": 60,
+                "modificationDate": 1783669605,
+                "value": null
+              },
+              {
+                "capabilityId": 88,
+                "modificationDate": 1783669605,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 91,
+                "modificationDate": 1792327003,
+                "value": "1"
+              },
+              {
+                "capabilityId": 93,
+                "modificationDate": 1783669605,
+                "value": "1"
+              },
+              {
+                "capabilityId": 94,
+                "modificationDate": 1783669605,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 106,
+                "modificationDate": 1783669608,
+                "value": "9"
+              },
+              {
+                "capabilityId": 109,
+                "modificationDate": 1792350192,
+                "value": "26.13"
+              },
+              {
+                "capabilityId": 112,
+                "modificationDate": 1792337588,
+                "value": "0"
+              },
+              {
+                "capabilityId": 119,
+                "modificationDate": 1792348463,
+                "value": "10.02"
+              },
+              {
+                "capabilityId": 120,
+                "modificationDate": 1783669606,
+                "value": "5"
+              },
+              {
+                "capabilityId": 150,
+                "modificationDate": 1792136290,
+                "value": "[[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]"
+              },
+              {
+                "capabilityId": 152,
+                "modificationDate": 1786798968,
+                "value": "0"
+              },
+              {
+                "capabilityId": 164,
+                "modificationDate": 1783669605,
+                "value": "1298"
+              },
+              {
+                "capabilityId": 171,
+                "modificationDate": 1783669605,
+                "value": "35.0000000000000000000"
+              },
+              {
+                "capabilityId": 172,
+                "modificationDate": 1783669605,
+                "value": "10.0000000000000000000"
+              },
+              {
+                "capabilityId": 179,
+                "modificationDate": 1792008776,
+                "value": "-57"
+              },
+              {
+                "capabilityId": 180,
+                "modificationDate": 1792136290,
+                "value": "100"
+              },
+              {
+                "capabilityId": 182,
+                "modificationDate": 1783669606,
+                "value": "0"
+              },
+              {
+                "capabilityId": 188,
+                "modificationDate": 1783669605,
+                "value": "3"
+              },
+              {
+                "capabilityId": 218,
+                "modificationDate": 1791737370,
+                "value": "0"
+              },
+              {
+                "capabilityId": 222,
+                "modificationDate": 1786798978,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 315,
+                "modificationDate": 1783669602,
+                "value": "7200"
+              },
+              {
+                "capabilityId": 328,
+                "modificationDate": 1792136290,
+                "value": "0"
+              },
+              {
+                "capabilityId": 329,
+                "modificationDate": 1783669603,
+                "value": "0"
+              },
+              {
+                "capabilityId": 334,
+                "modificationDate": 1792136290,
+                "value": "0"
+              },
+              {
+                "capabilityId": 335,
+                "modificationDate": 1783669605,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 342,
+                "modificationDate": 1787076089,
+                "value": "55.00000000000000000000"
+              },
+              {
+                "capabilityId": 345,
+                "modificationDate": 1792136290,
+                "value": "0"
+              },
+              {
+                "capabilityId": 346,
+                "modificationDate": 1783669603,
+                "value": "0"
+              },
+              {
+                "capabilityId": 349,
+                "modificationDate": 1783669603,
+                "value": "21"
+              },
+              {
+                "capabilityId": 351,
+                "modificationDate": 1783669603,
+                "value": "0"
+              },
+              {
+                "capabilityId": 370,
+                "modificationDate": 1790760801,
+                "value": "0"
+              },
+              {
+                "capabilityId": 380,
+                "modificationDate": 1792136290,
+                "value": "100"
+              },
+              {
+                "capabilityId": 381,
+                "modificationDate": 1783669605,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 100636,
+                "modificationDate": 1785266238,
+                "value": "0"
+              },
+              {
+                "capabilityId": 101302,
+                "modificationDate": 1783669605,
+                "value": "1"
+              },
+              {
+                "capabilityId": 107060,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 107078,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 107079,
+                "modificationDate": 1783669607,
+                "value": "2.5800000000000000000"
+              },
+              {
+                "capabilityId": 107083,
+                "modificationDate": 1783669607,
+                "value": "1"
+              },
+              {
+                "capabilityId": 107451,
+                "modificationDate": 1783669607,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 107452,
+                "modificationDate": 1783669607,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 107453,
+                "modificationDate": 1783669607,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 207451,
+                "modificationDate": 1783669607,
+                "value": "MASKED"
+              }
+            ]
+          },
+          {
+            "customName": "TESC_0 DEFAULT",
+            "deviceId": 27797321,
+            "deviceUrl": "MASKED",
+            "gatewayId": 1139778,
+            "masterDeviceId": 27797320,
+            "modelId": 1388,
+            "name": "MASKED",
+            "productId": 55,
+            "tags": [
+              {
+                "label": "MASKED",
+                "value": "ROOM_0"
+              }
+            ],
+            "gatewaySerialNumber": "MASKED",
+            "longName": "MASKED",
+            "productRange": null,
+            "isAvailable": true,
+            "isAvailableTimestamp": 1791737370,
+            "isRemoteMaintainable": false,
+            "zoneId": 996189,
+            "showInSettings": null,
+            "modelFamily": null,
+            "capabilities": [
+              {
+                "capabilityId": 19,
+                "modificationDate": 1792337683,
+                "value": "20"
+              },
+              {
+                "capabilityId": 109,
+                "modificationDate": 1792350192,
+                "value": "25.86"
+              },
+              {
+                "capabilityId": 218,
+                "modificationDate": 1791737370,
+                "value": "0"
+              },
+              {
+                "capabilityId": 106000,
+                "modificationDate": 1783669606,
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "customName": "ROOM_0",
+            "deviceId": 27797322,
+            "deviceUrl": "MASKED",
+            "gatewayId": 1139778,
+            "masterDeviceId": 27797320,
+            "modelId": 557,
+            "name": "MASKED",
+            "productId": 26,
+            "tags": [],
+            "gatewaySerialNumber": "MASKED",
+            "longName": "MASKED",
+            "productRange": null,
+            "isAvailable": true,
+            "isAvailableTimestamp": 1791737370,
+            "isRemoteMaintainable": false,
+            "zoneId": 996190,
+            "showInSettings": false,
+            "modelFamily": null,
+            "capabilities": [
+              {
+                "capabilityId": 7,
+                "modificationDate": 1783669730,
+                "value": "1"
+              },
+              {
+                "capabilityId": 17,
+                "modificationDate": 1792351904,
+                "value": "19"
+              },
+              {
+                "capabilityId": 40,
+                "modificationDate": 1792353646,
+                "value": "19"
+              },
+              {
+                "capabilityId": 73,
+                "modificationDate": 1783669605,
+                "value": "2"
+              },
+              {
+                "capabilityId": 75,
+                "modificationDate": 1783669607,
+                "value": "101"
+              },
+              {
+                "capabilityId": 117,
+                "modificationDate": 1792353008,
+                "value": "20.69"
+              },
+              {
+                "capabilityId": 153,
+                "modificationDate": 1792265486,
+                "value": "0"
+              },
+              {
+                "capabilityId": 154,
+                "modificationDate": 1783669605,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 157,
+                "modificationDate": 1792265709,
+                "value": "0"
+              },
+              {
+                "capabilityId": 158,
+                "modificationDate": 1783669607,
+                "value": "120"
+              },
+              {
+                "capabilityId": 159,
+                "modificationDate": 1792265736,
+                "value": "0"
+              },
+              {
+                "capabilityId": 160,
+                "modificationDate": 1783669606,
+                "value": "10.0000000000000000000"
+              },
+              {
+                "capabilityId": 161,
+                "modificationDate": 1783669606,
+                "value": "35.0000000000000000000"
+              },
+              {
+                "capabilityId": 162,
+                "modificationDate": 1783669606,
+                "value": "10.0000000000000000000"
+              },
+              {
+                "capabilityId": 163,
+                "modificationDate": 1783669606,
+                "value": "35.0000000000000000000"
+              },
+              {
+                "capabilityId": 166,
+                "modificationDate": 1783669605,
+                "value": "21"
+              },
+              {
+                "capabilityId": 177,
+                "modificationDate": 1783669606,
+                "value": "24.0000000000000000000"
+              },
+              {
+                "capabilityId": 181,
+                "modificationDate": 1791946810,
+                "value": "4"
+              },
+              {
+                "capabilityId": 184,
+                "modificationDate": 1791830393,
+                "value": "1"
+              },
+              {
+                "capabilityId": 192,
+                "modificationDate": 1783669607,
+                "value": "65.0000000000000000000"
+              },
+              {
+                "capabilityId": 193,
+                "modificationDate": 1783669607,
+                "value": "20.0000000000000000000"
+              },
+              {
+                "capabilityId": 194,
+                "modificationDate": 1783669606,
+                "value": "16.0000000000000000000"
+              },
+              {
+                "capabilityId": 195,
+                "modificationDate": 1783669606,
+                "value": "20.0000000000000000000"
+              },
+              {
+                "capabilityId": 217,
+                "modificationDate": 1783669605,
+                "value": "3075"
+              },
+              {
+                "capabilityId": 218,
+                "modificationDate": 1791737370,
+                "value": "0"
+              },
+              {
+                "capabilityId": 294,
+                "modificationDate": 1783669606,
+                "value": "0.5000000000000000000"
+              },
+              {
+                "capabilityId": 295,
+                "modificationDate": 1783669605,
+                "value": "15"
+              },
+              {
+                "capabilityId": 296,
+                "modificationDate": 1783669605,
+                "value": "60"
+              },
+              {
+                "capabilityId": 303,
+                "modificationDate": 1792136290,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 306,
+                "modificationDate": 1783669605,
+                "value": "8"
+              },
+              {
+                "capabilityId": 341,
+                "modificationDate": 1791946810,
+                "value": "4"
+              },
+              {
+                "capabilityId": 347,
+                "modificationDate": 1783669604,
+                "value": "0"
+              },
+              {
+                "capabilityId": 348,
+                "modificationDate": 1783669604,
+                "value": "1"
+              },
+              {
+                "capabilityId": 350,
+                "modificationDate": 1783669604,
+                "value": "0"
+              },
+              {
+                "capabilityId": 352,
+                "modificationDate": 1783669604,
+                "value": "18"
+              },
+              {
+                "capabilityId": 353,
+                "modificationDate": 1783669604,
+                "value": "19"
+              },
+              {
+                "capabilityId": 354,
+                "modificationDate": 1783669604,
+                "value": "18"
+              },
+              {
+                "capabilityId": 355,
+                "modificationDate": 1783669604,
+                "value": "26"
+              },
+              {
+                "capabilityId": 356,
+                "modificationDate": 1783669605,
+                "value": "24"
+              },
+              {
+                "capabilityId": 357,
+                "modificationDate": 1783669605,
+                "value": "26"
+              },
+              {
+                "capabilityId": 358,
+                "modificationDate": 1783669605,
+                "value": "0"
+              },
+              {
+                "capabilityId": 100000,
+                "modificationDate": 1783669605,
+                "value": "1"
+              },
+              {
+                "capabilityId": 100002,
+                "modificationDate": 1783669605,
+                "value": "0"
+              },
+              {
+                "capabilityId": 100004,
+                "modificationDate": 1783669605,
+                "value": "1"
+              },
+              {
+                "capabilityId": 100010,
+                "modificationDate": 1783669605,
+                "value": "0"
+              },
+              {
+                "capabilityId": 100013,
+                "modificationDate": 1783669605,
+                "value": "0"
+              },
+              {
+                "capabilityId": 100021,
+                "modificationDate": 1783669605,
+                "value": "1"
+              },
+              {
+                "capabilityId": 100022,
+                "modificationDate": 1783669606,
+                "value": "29"
+              },
+              {
+                "capabilityId": 100023,
+                "modificationDate": 1783669606,
+                "value": "3"
+              },
+              {
+                "capabilityId": 100100,
+                "modificationDate": 1783669737,
+                "value": "1"
+              },
+              {
+                "capabilityId": 100260,
+                "modificationDate": 1783669602,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 100300,
+                "modificationDate": 1783669605,
+                "value": "0"
+              },
+              {
+                "capabilityId": 100301,
+                "modificationDate": 1783669605,
+                "value": "56"
+              },
+              {
+                "capabilityId": 100320,
+                "modificationDate": 1791869633,
+                "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100321,
+                "modificationDate": 1791869633,
+                "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100322,
+                "modificationDate": 1791869633,
+                "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100323,
+                "modificationDate": 1791869633,
+                "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100324,
+                "modificationDate": 1791869633,
+                "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100325,
+                "modificationDate": 1791869633,
+                "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100326,
+                "modificationDate": 1791830393,
+                "value": "[[240,21,0],[360,20,0],[900,21,0],[1080,20,0],[1320,19,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100327,
+                "modificationDate": 1783669606,
+                "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100328,
+                "modificationDate": 1783669606,
+                "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100329,
+                "modificationDate": 1783669606,
+                "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100330,
+                "modificationDate": 1783669606,
+                "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100331,
+                "modificationDate": 1783669606,
+                "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100332,
+                "modificationDate": 1783669607,
+                "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100333,
+                "modificationDate": 1783669607,
+                "value": "[[360,24,0],[1320,26,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]"
+              },
+              {
+                "capabilityId": 100450,
+                "modificationDate": 1783669607,
+                "value": "1"
+              },
+              {
+                "capabilityId": 100600,
+                "modificationDate": 1783669607,
+                "value": "4"
+              },
+              {
+                "capabilityId": 100601,
+                "modificationDate": 1783669607,
+                "value": "4"
+              },
+              {
+                "capabilityId": 100607,
+                "modificationDate": 1783669607,
+                "value": "101"
+              },
+              {
+                "capabilityId": 103014,
+                "modificationDate": 1783669605,
+                "value": "0"
+              },
+              {
+                "capabilityId": 103150,
+                "modificationDate": 1792353008,
+                "value": "1"
+              },
+              {
+                "capabilityId": 103626,
+                "modificationDate": 1783669606,
+                "value": "0.0000000000000000000"
+              },
+              {
+                "capabilityId": 103627,
+                "modificationDate": 1783669606,
+                "value": "0.0000000000000000000"
+              }
+            ]
+          },
+          {
+            "customName": "Eau Chaude",
+            "deviceId": 27797323,
+            "deviceUrl": "MASKED",
+            "gatewayId": 1139778,
+            "masterDeviceId": 27797320,
+            "modelId": 1376,
+            "name": "MASKED",
+            "productId": 47,
+            "tags": [],
+            "gatewaySerialNumber": "MASKED",
+            "longName": "MASKED",
+            "productRange": null,
+            "isAvailable": true,
+            "isAvailableTimestamp": 1791737370,
+            "isRemoteMaintainable": false,
+            "zoneId": 996188,
+            "showInSettings": false,
+            "modelFamily": null,
+            "capabilities": [
+              {
+                "capabilityId": 15,
+                "modificationDate": 1783669606,
+                "value": "2"
+              },
+              {
+                "capabilityId": 22,
+                "modificationDate": 1787076094,
+                "value": "55.00000000000000000000"
+              },
+              {
+                "capabilityId": 23,
+                "modificationDate": 1783669606,
+                "value": "0.0000000000000000000"
+              },
+              {
+                "capabilityId": 86,
+                "modificationDate": 1786798968,
+                "value": "1"
+              },
+              {
+                "capabilityId": 87,
+                "modificationDate": 1783669606,
+                "value": "2"
+              },
+              {
+                "capabilityId": 99,
+                "modificationDate": 1792327003,
+                "value": "0"
+              },
+              {
+                "capabilityId": 111,
+                "modificationDate": 1792349868,
+                "value": "53.17"
+              },
+              {
+                "capabilityId": 165,
+                "modificationDate": 1783669606,
+                "value": "0"
+              },
+              {
+                "capabilityId": 168,
+                "modificationDate": 1783669606,
+                "value": "32001"
+              },
+              {
+                "capabilityId": 210,
+                "modificationDate": 1783669606,
+                "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+              },
+              {
+                "capabilityId": 211,
+                "modificationDate": 1783669606,
+                "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+              },
+              {
+                "capabilityId": 212,
+                "modificationDate": 1783669606,
+                "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+              },
+              {
+                "capabilityId": 213,
+                "modificationDate": 1783669606,
+                "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+              },
+              {
+                "capabilityId": 214,
+                "modificationDate": 1783669606,
+                "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+              },
+              {
+                "capabilityId": 215,
+                "modificationDate": 1783669606,
+                "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+              },
+              {
+                "capabilityId": 216,
+                "modificationDate": 1783669606,
+                "value": "[[0,20],[58,68],[0,0],[0,0],[0,0],[0,0]]"
+              },
+              {
+                "capabilityId": 218,
+                "modificationDate": 1791737370,
+                "value": "0"
+              },
+              {
+                "capabilityId": 223,
+                "modificationDate": 1783669606,
+                "value": "1"
+              },
+              {
+                "capabilityId": 224,
+                "modificationDate": 1783669606,
+                "value": "3"
+              },
+              {
+                "capabilityId": 226,
+                "modificationDate": 1783669602,
+                "value": "MASKED"
+              },
+              {
+                "capabilityId": 231,
+                "modificationDate": 1787076089,
+                "value": "55.00000000000000000000"
+              },
+              {
+                "capabilityId": 244,
+                "modificationDate": 1783669606,
+                "value": "3"
+              },
+              {
+                "capabilityId": 252,
+                "modificationDate": 1783669606,
+                "value": "65.0000000000000000000"
+              },
+              {
+                "capabilityId": 253,
+                "modificationDate": 1783669606,
+                "value": "15.0000000000000000000"
+              },
+              {
+                "capabilityId": 284,
+                "modificationDate": 1783669606,
+                "value": "0"
+              },
+              {
+                "capabilityId": 310,
+                "modificationDate": 1783669606,
+                "value": "3"
+              },
+              {
+                "capabilityId": 311,
+                "modificationDate": 1783669606,
+                "value": "1"
+              },
+              {
+                "capabilityId": 312,
+                "modificationDate": 1787076099,
+                "value": "55.00000000000000000000"
+              },
+              {
+                "capabilityId": 329,
+                "modificationDate": 1783669605,
+                "value": "1"
+              },
+              {
+                "capabilityId": 330,
+                "modificationDate": 1783669606,
+                "value": "15"
+              },
+              {
+                "capabilityId": 331,
+                "modificationDate": 1783669606,
+                "value": "1440"
+              },
+              {
+                "capabilityId": 332,
+                "modificationDate": 1783669606,
+                "value": "15"
+              },
+              {
+                "capabilityId": 333,
+                "modificationDate": 1783669606,
+                "value": "120"
+              },
+              {
+                "capabilityId": 336,
+                "modificationDate": 1783669606,
+                "value": "10"
+              },
+              {
+                "capabilityId": 337,
+                "modificationDate": 1786798968,
+                "value": "6"
+              },
+              {
+                "capabilityId": 338,
+                "modificationDate": 1786798968,
+                "value": "0"
+              },
+              {
+                "capabilityId": 339,
+                "modificationDate": 1792327003,
+                "value": "2"
+              },
+              {
+                "capabilityId": 340,
+                "modificationDate": 1783669605,
+                "value": "1"
+              },
+              {
+                "capabilityId": 105011,
+                "modificationDate": 1783669606,
+                "value": "32001"
+              },
+              {
+                "capabilityId": 105012,
+                "modificationDate": 1783669606,
+                "value": "1"
+              },
+              {
+                "capabilityId": 105300,
+                "modificationDate": 1783669606,
+                "value": "65.0000000000000000000"
+              },
+              {
+                "capabilityId": 105301,
+                "modificationDate": 1783669606,
+                "value": "50"
+              },
+              {
+                "capabilityId": 105636,
+                "modificationDate": 1785266238,
+                "value": "0"
+              },
+              {
+                "capabilityId": 105906,
+                "modificationDate": 1787076095,
+                "value": "81"
+              }
+            ]
+          },
+          {
+            "customName": "GENERATOR_0 DEFAULT",
+            "deviceId": 27797324,
+            "deviceUrl": "MASKED",
+            "gatewayId": 1139778,
+            "masterDeviceId": 27797320,
+            "modelId": 1391,
+            "name": "MASKED",
+            "productId": 58,
+            "tags": [],
+            "gatewaySerialNumber": "MASKED",
+            "longName": "MASKED",
+            "productRange": null,
+            "isAvailable": true,
+            "isAvailableTimestamp": 1791737370,
+            "isRemoteMaintainable": false,
+            "zoneId": 996188,
+            "showInSettings": false,
+            "modelFamily": null,
+            "capabilities": [
+              {
+                "capabilityId": 6,
+                "modificationDate": 1792136290,
+                "value": "0"
+              },
+              {
+                "capabilityId": 25,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 26,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 28,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 29,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 49,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 50,
+                "modificationDate": 1792334034,
+                "value": "0"
+              },
+              {
+                "capabilityId": 90,
+                "modificationDate": 1783669607,
+                "value": "0"
+              },
+              {
+                "capabilityId": 100,
+                "modificationDate": 1792335387,
+                "value": "1.36"
+              },
+              {
+                "capabilityId": 109,
+                "modificationDate": 1792343578,
+                "value": "26.13"
+              },
+              {
+                "capabilityId": 116,
+                "modificationDate": 1792338188,
+                "value": "26.77"
+              },
+              {
+                "capabilityId": 218,
+                "modificationDate": 1791737370,
+                "value": "0"
+              },
+              {
+                "capabilityId": 299,
+                "modificationDate": 1783669606,
+                "value": "1"
+              }
+            ]
+          }
+        ],
+        "gateways": [
+          {
+            "id": "MASKED",
+            "serialNumber": "MASKED",
+            "isAlive": true,
+            "setupId": "MASKED",
+            "type": 1000
+          }
+        ],
+        "zones": [
+          {
+            "id": "MASKED",
+            "name": "MASKED",
+            "zoneType": 2,
+            "numberOfDevices": 3
+          },
+          {
+            "id": "MASKED",
+            "name": "MASKED",
+            "zoneType": 29,
+            "numberOfDevices": 1
+          },
+          {
+            "id": "MASKED",
+            "name": "MASKED",
+            "zoneType": 1,
+            "numberOfDevices": 1
+          }
+        ]
+      }
+    ]
+  }
+}

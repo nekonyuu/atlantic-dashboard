@@ -1,0 +1,15 @@
+.env
+discover_output.json
+backend/discover_output.json
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+node_modules/
+frontend/dist/
+*.db
+*.db-wal
+*.db-shm
+.DS_Store
+backend/discover_magellan_output.json
