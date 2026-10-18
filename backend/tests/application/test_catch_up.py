@@ -13,7 +13,8 @@ def day(d, kwh=1.0, cat=1, tariff=Tariff.OFF_PEAK):
 async def test_no_source_means_nothing_fabricated(ctx):
     ctx.history = NullHistorySource()
     report = await ctx.catch_up().run()
-    assert not report.source_available and report.energy_days == 0
+    assert not report.source_available and report.days_written == 0
+    assert "Aucune source" in str(report)
     assert await ctx.energy.range(date(2026, 1, 1), date(2026, 12, 31)) == []
 
 
@@ -21,7 +22,10 @@ async def test_energy_days_are_backfilled_idempotently(ctx):
     ctx.history.days = [day(date(2026, 10, 16), 3.4), day(date(2026, 10, 17), 8.4)]
     first = await ctx.catch_up().run()
     second = await ctx.catch_up().run()
-    assert first.energy_days == 2 and second.energy_days == 0
+    assert first.days_written == 2 and second.days_written == 0
+    # une relance reçoit toujours les jours : 0 écrit ne veut pas dire 0 reçu
+    assert second.days_received == 2 and second.first_day == date(2026, 10, 16)
+    assert "2 entrée(s) journalière(s) reçue(s)" in str(second) and "0 nouvelle(s)" in str(second)
     assert len(await ctx.energy.range(date(2026, 10, 1), date(2026, 10, 31))) == 2
 
 
@@ -30,7 +34,7 @@ async def test_today_is_rewritten_until_closed(ctx):
     await ctx.catch_up().run()
     ctx.history.days = [day(date(2026, 10, 18), 2.5)]
     report = await ctx.catch_up().run()
-    assert report.energy_days == 1
+    assert report.days_written == 1
     [d] = await ctx.energy.range(date(2026, 10, 18), date(2026, 10, 18))
     assert d.kwh == 2.5
 
@@ -54,3 +58,10 @@ async def test_gaps_inside_covered_days_are_marked_recovered(ctx):
     [g_in] = await ctx.gaps.list(inside.start, inside.end)
     [g_out] = await ctx.gaps.list(outside.start, outside.end)
     assert g_in.recovered and not g_out.recovered
+
+
+async def test_empty_source_is_reported_as_such(ctx):
+    ctx.history.days = []
+    report = await ctx.catch_up().run()
+    assert report.source_available and report.days_received == 0
+    assert "aucun jour" in str(report)

@@ -20,9 +20,26 @@ from app.domain.values import Instant
 
 @dataclass(frozen=True, slots=True)
 class CatchUpReport:
-    energy_days: int = 0
+    """``days_received`` : jours renvoyés par la source ; ``days_written`` : jours nouveaux ou modifiés
+    en base (0 sur une relance : l'import est idempotent)."""
+
+    days_received: int = 0
+    days_written: int = 0
+    first_day: date | None = None
+    last_day: date | None = None
     gaps_recovered: int = 0
     source_available: bool = False
+
+    def __str__(self) -> str:
+        if not self.source_available:
+            return "Aucune source d'historique déclarée : rien à rattraper."
+        if self.days_received == 0:
+            return "La source n'a renvoyé aucun jour de consommation pour la période demandée."
+        return (
+            f"{self.days_received} entrée(s) journalière(s) reçue(s) du {self.first_day} au {self.last_day}, "
+            f"{self.days_written} nouvelle(s) ou modifiée(s) en base, "
+            f"{self.gaps_recovered} trou(s) marqué(s) rattrapé(s)."
+        )
 
 
 class CatchUp:
@@ -64,7 +81,14 @@ class CatchUp:
             ]
             if ids:
                 await self._gaps.mark_recovered(ids)
-        return CatchUpReport(energy_days=written, gaps_recovered=len(ids), source_available=True)
+        return CatchUpReport(
+            days_received=len(days),
+            days_written=written,
+            first_day=lo,
+            last_day=hi,
+            gaps_recovered=len(ids),
+            source_available=True,
+        )
 
 
 def _midnight(day: date) -> Instant:

@@ -59,7 +59,7 @@ class FakeContainer:
         if self.error:
             raise self.error
         self.since = since
-        return CatchUpReport(energy_days=3, source_available=True)
+        return CatchUpReport(days_received=3, days_written=3, source_available=True)
 
     async def _collect(self):
         if self.error:
@@ -91,7 +91,7 @@ async def test_catch_up_prints_report(monkeypatch, capsys):
     _patch(monkeypatch, c)
     assert await cli.main(["catch-up", "--since", "2026-02-01"]) == 0
     assert c.since == date(2026, 2, 1)
-    assert "energy_days=3" in capsys.readouterr().out
+    assert "3 entrée(s) journalière(s) reçue(s)" in capsys.readouterr().out
     assert c.closed
 
 
